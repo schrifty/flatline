@@ -1,8 +1,27 @@
+SEED_METADATA = [
+  ['Category', 'create'],
+  ['Category', 'create'],
+  ['Category', 'create'],
+  ['Category', 'create'],
+  ['Category', 'create']
+]
+
 ACTION_METADATA = [
+  [10, 'Blog', 'create']
+  [30, 'Blog', 'createPost', 'blog'],
+  [1, 'Category', 'create'],
+  [5, 'Group', 'create', 'category'],
+  [5, 'Group', 'create', 'group']
+#    ['category', 'delete', 5],
+#    ['category', 'update', 5],
+#    ['category', 'show', 100],
+#  [1, 'group', 'create', 'category'],
+#  [3, 'group', 'create', 'group'],
+#    ['group', 'delete', 10],
+#    ['group', 'show', 200],
+#    ['group', 'update', 10],
 #    ['activity', 'show', 20],
 #    ['activity', 'create', 10],
-  [1, 'Blog', 'create']
-  [3, 'Blog', 'createPost', 'blog'],
 #    ['blog', 'delete', 5],
 #    ['blog', 'deletePost', 10],
 #    ['blog', 'show', 100],
@@ -10,10 +29,6 @@ ACTION_METADATA = [
 #    ['blog', 'showMyPosts', 200],
 #    ['blog', 'update', 5],
 #    ['blog', 'updatePost', 10],
-#    ['category', 'create', 10],
-#    ['category', 'delete', 5],
-#    ['category', 'update', 5],
-#    ['category', 'show', 100],
 #    ['folder', 'create', 10],
 #    ['folder', 'create_document', 10],
 #    ['folder', 'delete', 5]
@@ -32,10 +47,6 @@ ACTION_METADATA = [
 #    ['forum', 'show_discussion', 200],
 #    ['forum', 'update', 5],
 #    ['forum', 'update_discussion', 10],
-#    ['group', 'create', 20],
-#    ['group', 'delete', 10],
-#    ['group', 'show', 200],
-#    ['group', 'update', 10],
 #    ['ideastorm', 'create', 10],
 #    ['ideastorm', 'create_idea', 10],
 #    ['ideastorm', 'delete', 5],
@@ -66,22 +77,28 @@ for action in ACTION_METADATA
 
 class Action
   Spaces = require('spaces-client')
+  @seed = (site, userId) ->
+    for action in SEED_METADATA
+      Action.launch(action, site, userId)
+
   @doSomething = (sites, host, user) ->
     action = actions[Math.floor(Math.random() * actions.length)]
     site = sites[Math.floor(Math.random() * sites.length)]
     site.users = [] unless site.users
     userId = site.users[Math.floor(Math.random() * site.users.length)]
+    Action.launch(action, site, userId)
 
+  @launch = (action, site, userId) ->
     skip = false
     parent = null
     if action[2]
-      unless parent = Spaces.Session.getRandomItemIdOfType(userId, action[2])
+      unless parent = Spaces.Session.getRandomSiteItemIdOfType(site, action[2])
         skip = true
 
     unless skip
       if klass = Spaces[action[0]]
         if f = klass[action[1]]
-          f.apply(klass, [site.full_url, parent, userId])
+          f.apply(klass, [site, parent, userId])
         else
           console.log "ERROR: Couldn't find Spaces." + action[0] + "." + action[1] + "()"
       else

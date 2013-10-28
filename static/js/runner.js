@@ -5,7 +5,7 @@
   SITE_CREATE_FREQUENCY_MS = 5000;
 
   Runner = (function() {
-    var Faker, Spaces, maxServers, maxSites;
+    var Action, Faker, Spaces, maxServers, maxSites;
 
     function Runner() {}
 
@@ -16,6 +16,8 @@
     Runner.sites = [];
 
     Spaces = new require('spaces-client');
+
+    Action = require('./action.js');
 
     Faker = require('Faker');
 
@@ -32,18 +34,22 @@
           }
         }
       };
-      return Spaces.Site.createSite(data, (function(site, cookie) {
-        var callback;
+      return Spaces.Site.createSite(data, (function(site) {
         Runner.sites.push(site);
-        Runner.createUser(site);
-        if (Runner.sites.length < maxSites) {
-          callback = function() {
-            return Runner.createSite();
-          };
-          return setTimeout(callback, (SITE_CREATE_FREQUENCY_MS / 2) + Math.random(SITE_CREATE_FREQUENCY_MS));
-        }
+        return Runner.login(site, 'tech-support@moxiesoft.com', 'k3ithm00n', (function(userId) {
+          var callback;
+          Spaces.Session.setAdminId(userId);
+          Action.seed(site, userId);
+          Runner.createUser(site);
+          if (Runner.sites.length < maxSites) {
+            callback = function() {
+              return Runner.createSite();
+            };
+            return setTimeout(callback, (SITE_CREATE_FREQUENCY_MS / 2) + Math.random(SITE_CREATE_FREQUENCY_MS));
+          }
+        }));
       }), (function(message) {
-        return console.log(message);
+        return console.log("Unable to create successfully - abandoning site [" + site.site_id + "]");
       }));
     };
 
@@ -63,17 +69,14 @@
         }
       };
       return Spaces.User.create(data, site.full_url, (function(user) {
-        var callback, userId;
-        userId = JSON.stringify(user).match(/^.*"id":"(.*?)".*/)[1];
-        Runner.login(site, email, password, (function(chunk, cookies) {
-          Spaces.Session.setSessionId(userId, cookies['_social_navigator_session']);
+        var callback;
+        console.log("[" + site.site_id + "][" + user.id + "]: Added User");
+        Runner.login(site, email, password, (function(userId) {
           if (!site.users) {
             site.users = [];
           }
           site.users.push(userId);
           return Runner.startActivity(site, userId);
-        }), (function() {
-          return console.log("User failed to log in [" + email + ":" + password + "]");
         }));
         callback = function() {
           return Runner.createUser(site);
@@ -84,7 +87,7 @@
       }));
     };
 
-    Runner.login = function(site, email, password, onsuccess, onfail) {
+    Runner.login = function(site, email, password, onsuccess) {
       var data;
       if (!(Runner.sites.length > 0)) {
         Runner.sites.push(site);
@@ -95,15 +98,18 @@
           password: password
         }
       };
-      return Spaces.Site.login(data, site, (function(chunk, cookies) {
-        return onsuccess(chunk, cookies);
+      return Spaces.Site.login(data, site, (function(resp, cookies) {
+        var userId;
+        userId = resp.match(/^.*"id":"(.*?)".*/)[1];
+        Spaces.Session.setSessionId(userId, cookies['_social_navigator_session']);
+        return onsuccess(userId);
       }), (function(msg) {
-        return onfail(msg);
+        return console.log("User failed to log in [" + email + ":" + password + "]: " + msg);
       }));
     };
 
     Runner.startActivity = function(site, userId) {
-      var Action, callback;
+      var callback;
       Action = require("./action.js");
       Action.doSomething(Runner.sites, site.full_url, userId);
       callback = function() {

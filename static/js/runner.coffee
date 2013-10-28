@@ -5,6 +5,7 @@ class Runner
   maxServers = 5
   @sites = []
   Spaces = new require('spaces-client')
+  Action = require('./action.js')
   Faker = require('Faker')
 
   @createSite: () ->
@@ -19,15 +20,21 @@ class Runner
         }
       }
     }
-    Spaces.Site.createSite(data, ((site, cookie) ->
+    Spaces.Site.createSite(data, ((site) ->
       Runner.sites.push site
-      Runner.createUser(site)
-      if Runner.sites.length < maxSites
-        callback = ->
-          Runner.createSite()
-        setTimeout callback, (SITE_CREATE_FREQUENCY_MS / 2) + Math.random(SITE_CREATE_FREQUENCY_MS)
+
+      # if we successfully created the site, lets log tech-support in and seed the site with a little structure
+      Runner.login(site, 'tech-support@moxiesoft.com', 'k3ithm00n', ((userId) ->
+        Spaces.Session.setAdminId(userId)
+        Action.seed(site, userId)
+        Runner.createUser(site)
+        if Runner.sites.length < maxSites
+          callback = ->
+            Runner.createSite()
+          setTimeout callback, (SITE_CREATE_FREQUENCY_MS / 2) + Math.random(SITE_CREATE_FREQUENCY_MS)
+      ))
     ), ((message) ->
-      console.log message
+      console.log "Unable to create successfully - abandoning site [" + site.site_id + "]"
     ))
 
   @createUser: (site) ->
@@ -44,15 +51,12 @@ class Runner
       }
     }
     Spaces.User.create(data, site.full_url, ((user) ->
+      console.log "[" + site.site_id + "][" + user.id + "]: Added User"
       # only kick off the user once they've successfully logged in
-      userId = JSON.stringify(user).match(/^.*"id":"(.*?)".*/)[1]
-      Runner.login(site, email, password, ((chunk, cookies) ->
-        Spaces.Session.setSessionId(userId, cookies['_social_navigator_session'])
+      Runner.login(site, email, password, ((userId) ->
         site.users = [] unless site.users
         site.users.push userId
         Runner.startActivity(site, userId)
-      ), (() ->
-        console.log "User failed to log in [" + email + ":" + password + "]"
       ))
       callback = () ->
         Runner.createUser(site)
@@ -61,7 +65,7 @@ class Runner
       console.log (message)
     ))
 
-  @login: (site, email, password, onsuccess, onfail) ->
+  @login: (site, email, password, onsuccess) ->
     Runner.sites.push site unless Runner.sites.length > 0 # TODO remove this
 
     data = {
@@ -70,10 +74,12 @@ class Runner
         password: password
       }
     }
-    Spaces.Site.login(data, site, ((chunk, cookies) ->
-      onsuccess(chunk, cookies)
+    Spaces.Site.login(data, site, ((resp, cookies) ->
+      userId = resp.match(/^.*"id":"(.*?)".*/)[1]
+      Spaces.Session.setSessionId(userId, cookies['_social_navigator_session'])
+      onsuccess(userId)
     ), ((msg) ->
-      onfail(msg)
+      console.log "User failed to log in [" + email + ":" + password + "]: " + msg
     ))
 
   @startActivity: (site, userId) ->
