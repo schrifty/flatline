@@ -1,14 +1,21 @@
+logger = require('./logger.js')
+
 SITE_CREATE_FREQUENCY_MS = 5000
 
 class Runner
   maxSites = 1
   maxServers = 5
+  newUserPeriod = 10000
+
   @sites = []
   Spaces = new require('spaces-client')
-  Action = require('./action.js')
   Faker = require('Faker')
+  Action = require('./action.js')
 
-  @createSite: () ->
+  @start: () ->
+    Runner.createSites()
+
+  @createSites: () ->
     site_name = "xx" + Faker.Internet.domainWord()
     data = {
       site: {
@@ -34,7 +41,7 @@ class Runner
           setTimeout callback, (SITE_CREATE_FREQUENCY_MS / 2) + Math.random(SITE_CREATE_FREQUENCY_MS)
       ))
     ), ((message) ->
-      console.log "Unable to create successfully - abandoning site [" + site.site_id + "]"
+      logger.debug("Unable to create successfully - abandoning site [%s]", site.site_id)
     ))
 
   @createUser: (site) ->
@@ -51,7 +58,7 @@ class Runner
       }
     }
     Spaces.User.create(data, site.full_url, ((user) ->
-      console.log "[" + site.site_id + "][" + user.id + "]: Added User"
+      logger.debug("[%s][%s]: Added User", site.site_id, user.id)
       # only kick off the user once they've successfully logged in
       Runner.login(site, email, password, ((userId) ->
         site.users = [] unless site.users
@@ -62,7 +69,7 @@ class Runner
         Runner.createUser(site)
       setTimeout callback, 1000
     ), ((message) ->
-      console.log (message)
+      logger.debug message
     ))
 
   @login: (site, email, password, onsuccess) ->
@@ -79,7 +86,7 @@ class Runner
       Spaces.Session.setSessionId(userId, cookies['_social_navigator_session'])
       onsuccess(userId)
     ), ((msg) ->
-      console.log "User failed to log in [" + email + ":" + password + "]: " + msg
+      winston.debug("User failed to log in [%s:%s]: %s", email, password, msg)
     ))
 
   @startActivity: (site, userId) ->

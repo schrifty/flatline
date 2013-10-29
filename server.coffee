@@ -22,12 +22,13 @@ NotFound = (msg) ->
 connect = require("connect")
 express = require("express")
 $ = require("jquery")
-io = require("socket.io")
 Runner = require("./static/js/runner.js")
+logger = require('./static/js/logger')
 Spaces = require("spaces-client")
-XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest
-xhr = new XMLHttpRequest()
-xhr.setDisableHeaderCheck(true)
+
+#XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest
+#xhr = new XMLHttpRequest()
+#xhr.setDisableHeaderCheck(true)
 
 port = (process.env.PORT or 8081)
 
@@ -63,17 +64,19 @@ server.error (err, req, res, next) ->
         analyticssiteid: "XXXXXXX"
         error: err
       status: 500
-
 server.listen port
+
+# socket.io
+io = require("socket.io")
 io = io.listen(server)
 io.sockets.on "connection", (socket) ->
-  console.log "Client Connected"
+  logger.debug("Client Connected")
   socket.on "message", (data) ->
     socket.broadcast.emit "server_message", data
     socket.emit "server_message", data
 
   socket.on "disconnect", ->
-    console.log "Client Disconnected."
+    logger.debug("Client Disconnected.")
 
 server.get "/", (req, res) ->
   res.render "index.jade",
@@ -84,15 +87,18 @@ server.get "/", (req, res) ->
       analyticssiteid: "XXXXXXX"
 
 server.post "/run", (req, res) ->
-  Runner.createSite()
+  Runner.start()
+  res.send 200
 
 server.post "/login", (req, res) ->
   site = req.body.site
   Runner.login(site)
+  res.send 200
 
 server.post "/createuser", (req, res) ->
   site = req.body.site
   Runner.createUser(site, null)
+  res.send 200
 
 server.get "/500", (req, res) ->
   throw new Error("This is a 500 Error")
@@ -100,4 +106,4 @@ server.get "/500", (req, res) ->
 server.get "/*", (req, res) ->
   throw new NotFound
 
-console.log "Listening on http://0.0.0.0:" + port
+logger.debug("Listening on http://0.0.0.0:%d", port)

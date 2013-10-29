@@ -1,3 +1,5 @@
+logger = require('./logger.js')
+
 SEED_METADATA = [
   ['Category', 'create'],
   ['Category', 'create'],
@@ -7,8 +9,8 @@ SEED_METADATA = [
 ]
 
 ACTION_METADATA = [
-  [10, 'Blog', 'create']
-  [30, 'Blog', 'createPost', 'blog'],
+  [5, 'Blog', 'create']
+  [10, 'Blog', 'createPost', 'blog'],
   [1, 'Category', 'create'],
   [5, 'Group', 'create', 'category'],
   [5, 'Group', 'create', 'group']
@@ -92,7 +94,8 @@ class Action
     skip = false
     parent = null
     if action[2]
-      unless parent = Spaces.Session.getRandomSiteItemIdOfType(site, action[2])
+      unless parent = Spaces.Session.getRandomUserItemIdOfType(site, userId, action[2])
+#        logger.warn("[%s][%s] WARN: action (%s#%s) not launched because no valid parent %s was found", site.site_id, userId, action[0], action[1], action[2])
         skip = true
 
     unless skip
@@ -100,8 +103,8 @@ class Action
         if f = klass[action[1]]
           f.apply(klass, [site, parent, userId])
         else
-          console.log "ERROR: Couldn't find Spaces." + action[0] + "." + action[1] + "()"
+          logger.error("[%s][%s] Couldn't find Spaces.%s.%s()", site, userId, action[0], action[1])
       else
-        console.log "ERROR: Couldn't find Spaces." + action[0]
+        logger.error("[%s][%s] Couldn't find Spaces.%s", site, userId, action[0])
 
 module.exports = exports = Action
