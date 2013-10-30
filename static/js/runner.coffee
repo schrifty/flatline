@@ -1,5 +1,3 @@
-logger = require('./logger.js')
-
 SITE_CREATE_FREQUENCY_MS = 5000
 
 class Runner
@@ -8,7 +6,9 @@ class Runner
   newUserPeriod = 10000
 
   @sites = []
-  Spaces = new require('spaces-client')
+  logger = require('./logger.js')
+  Spaces = require('spaces-client')
+  Spaces.setLogger(logger)
   Faker = require('Faker')
   Action = require('./action.js')
 
@@ -58,7 +58,7 @@ class Runner
       }
     }
     Spaces.User.create(data, site.full_url, ((user) ->
-      logger.debug("[%s][%s]: Added User", site.site_id, user.id)
+      logger.debug("[%s][%s] Added User", site.site_id, user.id)
       # only kick off the user once they've successfully logged in
       Runner.login(site, email, password, ((userId) ->
         site.users = [] unless site.users
@@ -82,7 +82,7 @@ class Runner
       }
     }
     Spaces.Site.login(data, site, ((resp, cookies) ->
-      userId = resp.match(/^.*"id":"(.*?)".*/)[1]
+      userId = resp.match(/"id":"(.*?)"/)[1]
       Spaces.Session.setSessionId(userId, cookies['_social_navigator_session'])
       onsuccess(userId)
     ), ((msg) ->
