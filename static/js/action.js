@@ -6,7 +6,7 @@
 
   SEED_METADATA = [['Category', 'create'], ['Category', 'create'], ['Category', 'create'], ['Category', 'create'], ['Category', 'create']];
 
-  ACTION_METADATA = [[5, 'Blog', 'create'], [10, 'Blog', 'createPost', 'blog'], [1, 'Category', 'create'], [5, 'Group', 'create', 'category'], [5, 'Group', 'create', 'group']];
+  ACTION_METADATA = [[5, 'Folder', 'create', 'folder'], [5, 'Folder', 'createDocument', 'folder']];
 
   actions = [];
 
@@ -62,7 +62,7 @@
           if (f = klass[action[1]]) {
             return f.apply(klass, [site, parent, userId]);
           } else {
-            return logger.error("[%s][%s] Couldn't find Spaces.%s.%s()", site, userId, action[0], action[1]);
+            return logger.error("[%s][%s] Couldn't find Spaces.%s.%s() %j", site, userId, action[0], action[1], JSON.stringify(klass));
           }
         } else {
           return logger.error("[%s][%s] Couldn't find Spaces.%s", site, userId, action[0]);

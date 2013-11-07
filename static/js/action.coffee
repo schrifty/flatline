@@ -9,21 +9,21 @@ SEED_METADATA = [
 ]
 
 ACTION_METADATA = [
-  [5, 'Blog', 'create']
-  [10, 'Blog', 'createPost', 'blog'],
-  [1, 'Category', 'create'],
-  [5, 'Group', 'create', 'category'],
-  [5, 'Group', 'create', 'group']
+#  [5, 'Blog', 'create']
+#  [10, 'Blog', 'createPost', 'blog'],
+#  [1, 'Category', 'create'],
+#  [5, 'Group', 'create', 'category'],
+#  [5, 'Group', 'create', 'group'],
+#  [10, 'Activity', 'create'],
+  [5, 'Folder', 'create', 'folder'],
+  [5, 'Folder', 'createDocument', 'folder']
+#  [10, 'activity', 'show']
 #    ['category', 'delete', 5],
 #    ['category', 'update', 5],
 #    ['category', 'show', 100],
-#  [1, 'group', 'create', 'category'],
-#  [3, 'group', 'create', 'group'],
 #    ['group', 'delete', 10],
 #    ['group', 'show', 200],
 #    ['group', 'update', 10],
-#    ['activity', 'show', 20],
-#    ['activity', 'create', 10],
 #    ['blog', 'delete', 5],
 #    ['blog', 'deletePost', 10],
 #    ['blog', 'show', 100],
@@ -31,8 +31,6 @@ ACTION_METADATA = [
 #    ['blog', 'showMyPosts', 200],
 #    ['blog', 'update', 5],
 #    ['blog', 'updatePost', 10],
-#    ['folder', 'create', 10],
-#    ['folder', 'create_document', 10],
 #    ['folder', 'delete', 5]
 #    ['folder', 'delete_document', 10],
 #    ['folder', 'lock_document', 5],
@@ -103,7 +101,7 @@ class Action
         if f = klass[action[1]]
           f.apply(klass, [site, parent, userId])
         else
-          logger.error("[%s][%s] Couldn't find Spaces.%s.%s()", site, userId, action[0], action[1])
+          logger.error("[%s][%s] Couldn't find Spaces.%s.%s() %j", site, userId, action[0], action[1], JSON.stringify(klass))
       else
         logger.error("[%s][%s] Couldn't find Spaces.%s", site, userId, action[0])
 

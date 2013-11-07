@@ -22,13 +22,10 @@ NotFound = (msg) ->
 connect = require("connect")
 express = require("express")
 $ = require("jquery")
-Runner = require("./static/js/runner.js")
-logger = require('./static/js/logger')
+Runner = require("./static/js/runner")
+logger = require("./static/js/logger")
+Config = require("./static/js/config")
 Spaces = require("spaces-client")
-
-#XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest
-#xhr = new XMLHttpRequest()
-#xhr.setDisableHeaderCheck(true)
 
 port = (process.env.PORT or 8081)
 

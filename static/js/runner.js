@@ -5,7 +5,7 @@
   SITE_CREATE_FREQUENCY_MS = 5000;
 
   Runner = (function() {
-    var Action, Faker, Spaces, logger, maxServers, maxSites, newUserPeriod;
+    var Action, Config, Faker, Spaces, logger, maxServers, maxSites, newUserPeriod;
 
     function Runner() {}
 
@@ -17,15 +17,21 @@
 
     Runner.sites = [];
 
-    logger = require('./logger.js');
+    Action = require("./action");
 
-    Spaces = require('spaces-client');
+    logger = require("./logger");
+
+    Config = require("./config");
+
+    Faker = require("Faker");
+
+    Spaces = require("spaces-client");
 
     Spaces.setLogger(logger);
 
-    Faker = require('Faker');
+    Spaces.setMothershipURL(Config.mothershipUrl);
 
-    Action = require('./action.js');
+    Spaces.setApiKey(Config.apiKey);
 
     Runner.start = function() {
       return Runner.createSites();
@@ -82,6 +88,7 @@
         var callback;
         logger.debug("[%s][%s] Added User", site.site_id, user.id);
         Runner.login(site, email, password, (function(userId) {
+          Runner.registerPersonalDocLib(site, userId);
           if (!site.users) {
             site.users = [];
           }
@@ -95,6 +102,26 @@
       }), (function(message) {
         return logger.debug(message);
       }));
+    };
+
+    Runner.registerPersonalDocLib = function(site, userId) {
+      var XMLHttpRequest, xhr;
+      XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+      xhr = new XMLHttpRequest();
+      xhr.setDisableHeaderCheck(true);
+      xhr.open('GET', site.full_url + "/current_user/document_library", true);
+      xhr.setRequestHeader("Accept", "application/vnd.moxiesoft.spaces-v1+json");
+      xhr.setRequestHeader("Cookie", ["_social_navigator_session=" + Spaces.Session.getSessionId(site, userId), "path=/"]);
+      xhr.onload = function() {
+        var folderId;
+        if (this.status === 200 || this.status === 201) {
+          folderId = this.responseText.match(/"id":"(.*?)"/)[1];
+          return Spaces.Session.addItem(site, userId, 'folder', folderId);
+        } else {
+          return Spaces.logger.error("[%s][%s] DocLib recovery failed: %s - %s", site.site_id, userId, this.status, this.responseText);
+        }
+      };
+      return xhr.send();
     };
 
     Runner.login = function(site, email, password, onsuccess) {
@@ -114,7 +141,7 @@
         Spaces.Session.setSessionId(userId, cookies['_social_navigator_session']);
         return onsuccess(userId);
       }), (function(msg) {
-        return winston.debug("User failed to log in [%s:%s]: %s", email, password, msg);
+        return logger.debug("User failed to log in [%s:%s]: %s", email, password, msg);
       }));
     };
 
