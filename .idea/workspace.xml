@@ -60,7 +60,7 @@
     <file path="/script.js" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1381533435599" ignored="false" />
     <file path="/server.js" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1381725488053" ignored="false" />
     <file path="/a.dummy" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383605723226" ignored="false" />
-    <file path="/Dummy.txt" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383923892357" ignored="false" />
+    <file path="/Dummy.txt" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383924076254" ignored="false" />
     <file path="/runner.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383698410195" ignored="false" />
     <file path="/API.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1381535209971" ignored="false" />
     <file path="/user.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383106794693" ignored="false" />
@@ -219,7 +219,7 @@
       <file leaf-file-name="folder.coffee" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/folder.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="85" selection-start="3280" selection-end="3280" vertical-scroll-proportion="1.8117229">
+            <state line="26" column="19" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.6927176">
               <folding />
             </state>
           </provider>
@@ -569,7 +569,11 @@
       <created>1383923951956</created>
       <updated>1383923951956</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="dependencies">
+      <created>1383924084197</created>
+      <updated>1383924084197</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -597,7 +601,7 @@
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38555443" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="0" y="641" width="1440" height="204" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38555443" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="0" y="641" width="1440" height="204" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278237" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33572453" sideWeight="0.6162311" order="1" side_tool="false" content_ui="tabs" />
@@ -778,7 +782,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/folder.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="85" selection-start="3280" selection-end="3280" vertical-scroll-proportion="1.8117229">
+        <state line="26" column="19" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.6927176">
           <folding />
         </state>
       </provider>
