@@ -1,782 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44ef8a29-fb4a-4cd5-8425-797ab802f2be" name="Default" comment="" />
-    <list id="a7db8a03-c0a1-4c32-b1ed-15da01e9cfc5" name="dependencies" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/test/fixtures/.gitkeep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/test/fixtures/logs/.gitkeep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/test/fixtures/.gitkeep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/test/fixtures/logs/.gitkeep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/files/Architecture Diagram.key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/files/Evan Alter.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/files/Listener Build.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/files/Ops Design Guide.pptx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/images/boom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/images/boom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/ssl/ca/ca.crl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/ssl/ca/ca.crl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/googledoodle.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/googledoodle.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/images/hawk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/images/hawk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/images/hoek.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/images/hoek.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/unicycle.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/unicycle.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/async/.gitmodules" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/qs/.gitmodules" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/qs/.gitmodules" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/async/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/node_modules/wordwrap/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/pkginfo/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/pkginfo/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/cryptiles/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/node-uuid/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/qs/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/stack-trace/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/pkginfo/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/cryptiles/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/node-uuid/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/qs/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/stack-trace/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/cryptiles/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/qs/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/cryptiles/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/qs/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/qs/History.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/qs/History.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/node-uuid/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/node-uuid/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/async/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/ini/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/async/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/eyes/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/pkginfo/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/cryptiles/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/json-stringify-safe/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/mime/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/async/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/eyes/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/pkginfo/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/cryptiles/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/json-stringify-safe/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/mime/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/License" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/License" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/License" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/stack-trace/License" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/License" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/License" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/License" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/stack-trace/License" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/colors/MIT-LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/colors/MIT-LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/async/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/eyes/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/cryptiles/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/qs/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/stack-trace/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/eyes/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/cryptiles/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/qs/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/stack-trace/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/node_modules/wordwrap/README.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/async/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/ini/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/pkginfo/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/async/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/cycle/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/eyes/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/pkginfo/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/cryptiles/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/json-stringify-safe/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/mime/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/node-uuid/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/node-uuid/benchmark/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/async/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/cycle/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/eyes/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/pkginfo/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/cryptiles/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/json-stringify-safe/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/mime/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/node-uuid/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/node-uuid/benchmark/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/colors/ReadMe.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/colors/ReadMe.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/qs/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/stack-trace/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/qs/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/stack-trace/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/test/_.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/activity.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/activity.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/activity.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/test/fixtures/keys/agent2-cert.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/test/fixtures/keys/agent2-cert.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/test/fixtures/keys/agent2-key.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/test/fixtures/keys/agent2-key.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/pkginfo/examples/all-properties.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/pkginfo/examples/all-properties.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/pkginfo/examples/all-properties.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/stores/argv-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/lib/nconf/stores/argv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/test/_/argv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/pkginfo/examples/array-argument.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/pkginfo/examples/array-argument.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/pkginfo/examples/array-argument.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/async/lib/async.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/async/lib/async.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/async/lib/async.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/ini/test/bar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/node-uuid/benchmark/bench.gnu" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/node-uuid/benchmark/bench.gnu" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/node-uuid/benchmark/bench.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/node-uuid/benchmark/bench.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/node-uuid/benchmark/benchmark-native.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/node-uuid/benchmark/benchmark-native.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/node-uuid/benchmark/benchmark.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/qs/benchmark.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/node-uuid/benchmark/benchmark.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/qs/benchmark.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/test/_/bin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/fixtures/bom.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/example/bool.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/example/boolean_double.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/example/boolean_single.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/node_modules/wordwrap/test/break.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/ssl/ca/ca.cnf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/ssl/ca/ca.cnf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/ssl/ca/ca.crt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/ssl/ca/ca.crt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/ssl/ca/ca.csr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/ssl/ca/ca.csr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/ssl/ca/ca.key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/ssl/ca/ca.key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/ssl/ca/ca.srl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/ssl/ca/ca.srl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/node_modules/wordwrap/example/center.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/lib/winston/config/cli-config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/lib/winston/config/cli-config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/test/cli-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/test/cli-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/lib/client.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/test/client.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/lib/client.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/test/client.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/colors/colors.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/colors/colors.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/lib/combined_stream.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/lib/combined_stream.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/common-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/docs/nconf/common.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/lib/nconf/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/lib/winston/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/lib/winston/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/node-uuid/test/compare_v1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/node-uuid/test/compare_v1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/complete-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/fixtures/complete.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/async/component.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/node-uuid/component.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/qs/component.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/async/component.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/node-uuid/component.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/qs/component.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/config.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/config.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/lib/winston/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/lib/winston/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/test/transports/console-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/test/transports/console-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/lib/winston/transports/console.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/lib/winston/transports/console.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/test/container-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/test/container-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/lib/winston/container.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/lib/winston/container.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/examples/couchdb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/examples/couchdb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/lib/crypto.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/test/crypto.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/lib/crypto.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/test/crypto.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/examples/custom-levels.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/examples/custom-levels.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/test/custom-timestamp-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/test/custom-timestamp-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/cycle/cycle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/cycle/cycle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/test/transports/daily-rotate-file-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/test/transports/daily-rotate-file-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/lib/winston/transports/daily-rotate-file.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/lib/winston/transports/daily-rotate-file.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/fixtures/data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/test/fixtures/scripts/default-exceptions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/test/fixtures/scripts/default-exceptions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/example/default_hash.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/example/default_singles.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/lib/delayed_stream.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/lib/delayed_stream.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/example/divide.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/docs/docco.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/pkginfo/docs/docco.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/pkginfo/docs/docco.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/pkginfo/docs/docco.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/stores/env-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/lib/nconf/stores/env.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/lib/escape.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/lib/escape.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/test/escaper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/test/escaper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/colors/example.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/colors/example.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/colors/example.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/colors/example.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/qs/examples.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/qs/examples.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/test/exception-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/test/exception-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/examples/exception.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/lib/winston/exception.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/examples/exception.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/lib/winston/exception.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/test/fixtures/scripts/exit-on-error.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/test/fixtures/scripts/exit-on-error.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/qs/test/browser/expect.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/qs/test/browser/expect.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/eyes/test/eyes-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/eyes/test/eyes-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/eyes/lib/eyes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/eyes/lib/eyes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/test/transports/file-maxfiles-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/test/transports/file-maxfiles-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/test/transports/file-maxsize-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/test/transports/file-maxsize-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/stores/file-store-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/test/transports/file-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/test/transports/file-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/docs/nconf/stores/file.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/lib/nconf/stores/file.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/lib/winston/transports/file.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/lib/winston/transports/file.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/fixtures/merge/file1.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/fixture/file1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/fixture/file1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/fixtures/merge/file2.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/fixture/file2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/fixture/file2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/folder.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/folder.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/folder.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/ini/test/fixtures/foo.ini" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/ini/test/foo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/lib/form_data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/lib/form_data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/docs/nconf/formats.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/lib/nconf/formats.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/fixtures/hierarchy/global.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/helpers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/test/helpers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/test/helpers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/fixtures/hierarchy/hierarchical.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/hierarchy-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/lib/winston/transports/http.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/lib/winston/transports/http.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/node_modules/wordwrap/test/idleness.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/qs/test/browser/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/qs/test/browser/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/async/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/node_modules/wordwrap/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/aws-sign/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/cookie-jar/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/forever-agent/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/lib/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/lib/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/test/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/cryptiles/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/cryptiles/lib/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/cryptiles/test/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/lib/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/test/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/lib/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/test/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/test/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/oauth-sign/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/qs/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/tunnel-agent/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/aws-sign/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/cookie-jar/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/forever-agent/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/lib/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/lib/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/test/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/cryptiles/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/cryptiles/lib/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/cryptiles/test/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/lib/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/test/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/lib/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/test/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/test/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/oauth-sign/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/qs/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/tunnel-agent/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/ini/ini.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/cookie-jar/jar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/cookie-jar/jar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/qs/test/browser/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/qs/test/browser/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/example/line_count.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/example/line_count_options.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/example/line_count_wrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/stores/literal-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/lib/nconf/stores/literal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/test/log-exception-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/test/log-exception-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/test/fixtures/scripts/log-exceptions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/test/fixtures/scripts/log-exceptions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/test/log-rewriter-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/test/log-rewriter-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/test/logger-levels-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/test/logger-levels-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/test/logger-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/test/logger-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/logger.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/logger.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/lib/winston/logger.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/lib/winston/logger.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/logger.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/fixtures/malformed.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/node_modules/wordwrap/example/meat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/stores/memory-store-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/test/transports/memory-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/test/transports/memory-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/docs/nconf/stores/memory.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/lib/nconf/stores/memory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/lib/winston/transports/memory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/lib/winston/transports/memory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/mime/mime.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/mime/mime.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/mime/types/mime.types" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/mime/types/mime.types" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/qs/test/browser/mocha.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/qs/test/browser/mocha.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/qs/test/browser/mocha.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/qs/test/browser/mocha.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/mocks/mock-store.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/pkginfo/examples/multiple-properties.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/pkginfo/examples/multiple-properties.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/pkginfo/examples/multiple-properties.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/fixtures/scripts/nconf-argv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/fixtures/scripts/nconf-change-argv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/fixtures/scripts/nconf-env.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/fixtures/scripts/nconf-hierarchical-file-argv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/fixtures/scripts/nconf-hierarchical-load-merge.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/fixtures/scripts/nconf-hierarchical-load-save.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/fixtures/scripts/nconf-nested-env.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/nconf-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/docs/nconf.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/lib/nconf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/fixtures/no-bom.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/mime/types/node.types" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/mime/types/node.types" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/example/nonopt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/ssl/npm-ca.crt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/ssl/npm-ca.crt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/lib/winston/config/npm-config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/lib/winston/config/npm-config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/pkginfo/examples/object-argument.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/pkginfo/examples/object-argument.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/pkginfo/examples/object-argument.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/examples/offset.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/examples/offset.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/async/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/ini/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/node_modules/wordwrap/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/pkginfo/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/pkginfo/examples/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/async/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/colors/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/cycle/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/eyes/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/pkginfo/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/pkginfo/examples/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/pkginfo/examples/subdir/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/aws-sign/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/cookie-jar/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/forever-agent/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/cryptiles/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/json-stringify-safe/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/mime/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/node-uuid/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/oauth-sign/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/qs/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/tunnel-agent/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/stack-trace/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/async/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/colors/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/cycle/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/eyes/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/pkginfo/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/pkginfo/examples/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/pkginfo/examples/subdir/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/aws-sign/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/cookie-jar/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/forever-agent/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/cryptiles/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/json-stringify-safe/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/mime/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/node-uuid/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/oauth-sign/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/qs/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/tunnel-agent/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/stack-trace/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/test/parse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/qs/test/parse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/qs/test/parse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/pkginfo/test/pkginfo-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/pkginfo/test/pkginfo-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/pkginfo/test/pkginfo-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/pkginfo/docs/pkginfo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/pkginfo/docs/pkginfo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/pkginfo/docs/pkginfo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/pkginfo/lib/pkginfo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/pkginfo/lib/pkginfo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/pkginfo/lib/pkginfo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/fixtures/scripts/provider-argv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/fixtures/scripts/provider-env.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/provider-save-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/provider-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/docs/nconf/provider.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/lib/nconf/provider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/qs/test/browser/qs.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/qs/test/browser/qs.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/qs/test/browser/qs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/qs/test/browser/qs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/examples/raw-mode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/examples/raw-mode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/test/readme.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/test/readme.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/readme.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/example/reflect.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/cookie-jar/tests/run.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/run.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/run.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/run.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/cookie-jar/tests/run.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/run.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/run.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/run.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/ssl/ca/server.cnf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/ssl/ca/server.cnf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/ssl/ca/server.crt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/ssl/ca/server.crt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/ssl/ca/server.csr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/ssl/ca/server.csr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/lib/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/test/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/ssl/ca/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/lib/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/test/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/ssl/ca/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/ssl/ca/server.key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/ssl/ca/server.key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/example/short.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/pkginfo/examples/single-property.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/pkginfo/examples/single-property.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/pkginfo/examples/single-property.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/squid.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/squid.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/stack-trace/lib/stack-trace.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/stack-trace/lib/stack-trace.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/standalone.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/standalone.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/standalone.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/standalone.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/standalone.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/docs/nconf/stores.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/example/string.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/json-stringify-safe/stringify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/qs/test/stringify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/json-stringify-safe/stringify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/qs/test/stringify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/lib/winston/config/syslog-config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/lib/winston/config/syslog-config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/docs/nconf/stores/system.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/pkginfo/examples/target-dir.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/pkginfo/examples/target-dir.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/test-basic-auth.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/test-basic-auth.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/test-body.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/test-body.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-callback-streams.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-callback-streams.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/cookie-jar/tests/test-cookie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/cookie-jar/tests/test-cookie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/cookie-jar/tests/test-cookiejar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/cookie-jar/tests/test-cookiejar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-data-size.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-data-size.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/test-defaults.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/test-defaults.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-delayed-http-upload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-delayed-http-upload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-delayed-stream-auto-pause.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-delayed-stream-auto-pause.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-delayed-stream-pause.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-delayed-stream-pause.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-delayed-stream.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-delayed-stream.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-delayed-streams-and-buffers-and-strings.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-delayed-streams-and-buffers-and-strings.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-delayed-streams.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-delayed-streams.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/test-digest-auth.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/test-digest-auth.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-empty-string.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-empty-string.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/test-errors.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/test-errors.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/test-follow-all-303.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/test-follow-all-303.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/test-follow-all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/test-follow-all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/test-form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/test-form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-handle-source-errors.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-handle-source-errors.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/test-hawk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/test-hawk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/test-headers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/test-headers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/test-httpModule.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/test-httpModule.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/test-https-strict.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/test-https-strict.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/test-https.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/test-https.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-is-stream-like.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-is-stream-like.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-max-data-size.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-max-data-size.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-max-data-size.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-max-data-size.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/test-oauth.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/test-oauth.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/test-params.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/test-params.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-pipe-resumes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-pipe-resumes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/test-piped-redirect.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/test-piped-redirect.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/test-pipes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/test-pipes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/test-pool.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/test-pool.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/test-protocol-changing-redirect.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/test-protocol-changing-redirect.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-proxy-readable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-proxy-readable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/test-proxy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/test-proxy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/test-qs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/test-qs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/test-redirect.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/test-redirect.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/test-s3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/test-s3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/test-timeout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/test-timeout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/test-toJSON.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/test-toJSON.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/test-tunnel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/test-tunnel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-unpaused-streams.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-unpaused-streams.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/ssl/test.crt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/ssl/test.crt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/node-uuid/test/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/node-uuid/test/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/colors/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/json-stringify-safe/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/mime/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/node-uuid/test/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/oauth-sign/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/colors/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/json-stringify-safe/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/mime/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/node-uuid/test/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/oauth-sign/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/tests/ssl/test.key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/tests/ssl/test.key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/test/modules/test1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/test/modules/test1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/test/modules/test2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/test/modules/test2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/test/modules/test3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/test/modules/test3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/examples/time.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/examples/time.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/lib/winston/transports/transport.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/test/transports/transport.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/lib/winston/transports/transport.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/test/transports/transport.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/lib/winston/transports.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/lib/winston/transports.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/docs/transports.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/docs/transports.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/test/fixtures/scripts/unhandle-exceptions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/test/fixtures/scripts/unhandle-exceptions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/lib/uri.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/test/uri.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/lib/uri.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/test/uri.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/example/usage-options.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/usage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/test/usage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/example/usage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/example/usage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/test/fixtures/hierarchy/user.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/lib/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/test/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/lib/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/test/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/node-uuid/uuid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/node-uuid/uuid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/examples/webhook-post.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/examples/webhook-post.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/test/transports/webhook-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/test/transports/webhook-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/lib/winston/transports/webhook.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/lib/winston/transports/webhook.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/colors/themes/winston-dark.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/colors/themes/winston-dark.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/colors/themes/winston-light.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/colors/themes/winston-light.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/test/winston-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/test/winston-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/lib/winston.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/winston/lib/winston.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/node_modules/wordwrap/test/wrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/nconf/node_modules/optimist/example/xup.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/spaces-client/asd" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="44ef8a29-fb4a-4cd5-8425-797ab802f2be" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/.npmignore" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/.npmignore" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/Makefile" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/cryptiles/Makefile" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/cryptiles/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/Makefile" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/Makefile" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/cryptiles/Makefile" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/cryptiles/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/Makefile" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/README.md" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/README.md" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/lib/client.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/lib/client.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/test/client.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/test/client.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/lib/client.js" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/lib/client.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/test/client.js" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/test/client.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/lib/crypto.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/lib/crypto.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/test/crypto.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/test/crypto.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/lib/crypto.js" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/lib/crypto.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/test/crypto.js" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/test/crypto.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/lib/escape.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/lib/escape.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/lib/escape.js" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/lib/escape.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/test/escaper.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/test/escaper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/test/escaper.js" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/test/escaper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/lib/index.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/lib/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/test/index.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/test/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/cryptiles/test/index.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/cryptiles/test/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/lib/index.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/lib/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/test/index.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/test/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/test/index.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/test/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/test/index.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/test/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/lib/index.js" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/lib/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/test/index.js" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/boom/test/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/cryptiles/test/index.js" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/cryptiles/test/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/lib/index.js" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/lib/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/test/index.js" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/hoek/test/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/test/index.js" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/node_modules/sntp/test/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/test/index.js" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/test/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/test/readme.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/test/readme.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/test/readme.js" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/test/readme.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/lib/server.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/lib/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/test/server.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/test/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/lib/server.js" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/lib/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/test/server.js" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/test/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/test/uri.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/test/uri.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/test/uri.js" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/test/uri.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/example/usage.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/example/usage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/example/usage.js" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/example/usage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/lib/utils.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/lib/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/test/utils.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/hawk/test/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/lib/utils.js" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/lib/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/test/utils.js" afterPath="$PROJECT_DIR$/node_modules/winston/node_modules/request/node_modules/hawk/test/utils.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flatline.iws" />
@@ -785,7 +60,7 @@
     <file path="/script.js" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1381533435599" ignored="false" />
     <file path="/server.js" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1381725488053" ignored="false" />
     <file path="/a.dummy" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383605723226" ignored="false" />
-    <file path="/Dummy.txt" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383923773299" ignored="false" />
+    <file path="/Dummy.txt" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383923892357" ignored="false" />
     <file path="/runner.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383698410195" ignored="false" />
     <file path="/API.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1381535209971" ignored="false" />
     <file path="/user.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383106794693" ignored="false" />
@@ -944,7 +219,7 @@
       <file leaf-file-name="folder.coffee" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/folder.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="54" selection-start="3028" selection-end="3028" vertical-scroll-proportion="0.42477876">
+            <state line="68" column="85" selection-start="3280" selection-end="3280" vertical-scroll-proportion="1.8117229">
               <folding />
             </state>
           </provider>
@@ -1266,7 +541,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="44ef8a29-fb4a-4cd5-8425-797ab802f2be" name="Default" comment="" />
-      <changelist id="a7db8a03-c0a1-4c32-b1ed-15da01e9cfc5" name="dependencies" comment="" />
+      <changelist id="" name="dependencies" comment="" />
       <created>1381531410154</created>
       <updated>1381531410154</updated>
     </task>
@@ -1290,7 +565,11 @@
       <created>1383804524465</created>
       <updated>1383804524465</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="dependencies">
+      <created>1383923951956</created>
+      <updated>1383923951956</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1317,11 +596,12 @@
     <frame x="-1920" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3847716" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="0" y="641" width="1440" height="204" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38555443" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="0" y="641" width="1440" height="204" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278237" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33572453" sideWeight="0.6162311" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15741728" sideWeight="0.6152284" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15741728" sideWeight="0.61444557" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39979655" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38567492" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1331,7 +611,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3232462" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1379,7 +658,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got docs working" />
+    <option name="LAST_COMMIT_MESSAGE" value="dependencies" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1395,6 +674,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Many changes" />
     <MESSAGE value="Got docs working" />
+    <MESSAGE value="dependencies" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1491,12 +771,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/folder.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="31" selection-start="2505" selection-end="2505" vertical-scroll-proportion="0.0" />
+        <state line="65" column="31" selection-start="2505" selection-end="2505" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/folder.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="54" selection-start="3028" selection-end="3028" vertical-scroll-proportion="0.42477876">
+        <state line="68" column="85" selection-start="3280" selection-end="3280" vertical-scroll-proportion="1.8117229">
           <folding />
         </state>
       </provider>
