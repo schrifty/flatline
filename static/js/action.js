@@ -6,7 +6,7 @@
 
   SEED_METADATA = [['Category', 'create'], ['Category', 'create'], ['Category', 'create'], ['Category', 'create'], ['Category', 'create']];
 
-  ACTION_METADATA = [[5, 'Folder', 'create', 'folder'], [5, 'Folder', 'createDocument', 'folder']];
+  ACTION_METADATA = [[5, 'Blog', 'create'], [5, 'Blog', 'deleteBlog'], [10, 'Blog', 'createPost', 'blog'], [1, 'Category', 'create'], [5, 'Group', 'create', 'category'], [5, 'Group', 'create', 'group'], [10, 'Activity', 'create'], [5, 'Folder', 'create', 'folder'], [5, 'Folder', 'createDocument', 'folder']];
 
   actions = [];
 

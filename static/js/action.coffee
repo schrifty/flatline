@@ -9,15 +9,16 @@ SEED_METADATA = [
 ]
 
 ACTION_METADATA = [
-#  [5, 'Blog', 'create']
-#  [10, 'Blog', 'createPost', 'blog'],
-#  [1, 'Category', 'create'],
-#  [5, 'Group', 'create', 'category'],
-#  [5, 'Group', 'create', 'group'],
-#  [10, 'Activity', 'create'],
+  [5, 'Blog', 'create'],
+  [5, 'Blog', 'deleteBlog'],
+  [10, 'Blog', 'createPost', 'blog'],
+  [1, 'Category', 'create'],
+  [5, 'Group', 'create', 'category'],
+  [5, 'Group', 'create', 'group'],
+  [10, 'Activity', 'create'],
   [5, 'Folder', 'create', 'folder'],
   [5, 'Folder', 'createDocument', 'folder']
-#  [10, 'activity', 'show']
+#  [10, 'Activity', 'show']
 #    ['category', 'delete', 5],
 #    ['category', 'update', 5],
 #    ['category', 'show', 100],
