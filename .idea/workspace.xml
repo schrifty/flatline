@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44ef8a29-fb4a-4cd5-8425-797ab802f2be" name="Default" comment="">
+    <list default="true" id="44ef8a29-fb4a-4cd5-8425-797ab802f2be" name="Default" comment="" />
+    <list id="73328003-b063-41e0-8e0f-6454d1163261" name="Ideastorms, Forums, More DRY" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/forum.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/forum.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/forum.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/ideastorm.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/ideastorm.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/ideastorm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/action.coffee" afterPath="$PROJECT_DIR$/static/js/action.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/action.js" afterPath="$PROJECT_DIR$/static/js/action.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/lib/blog.coffee" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/blog.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/lib/blog.js.map" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/blog.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/lib/blog.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/blog.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/lib/folder.coffee" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/folder.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/lib/folder.js.map" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/folder.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/lib/folder.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/folder.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/logger.js.map" afterPath="$PROJECT_DIR$/static/js/logger.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/lib/resource.coffee" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/resource.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/lib/resource.js.map" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/resource.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/lib/resource.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/resource.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/lib/spaces-client.coffee" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/spaces-client.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/lib/spaces-client.js.map" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/spaces-client.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/lib/spaces-client.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/spaces-client.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flatline.iws" />
@@ -10,15 +31,15 @@
     <file path="/index.jade" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382648984179" ignored="false" />
     <file path="/script.js" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1381533435599" ignored="false" />
     <file path="/server.js" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1381725488053" ignored="false" />
-    <file path="/a.dummy" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383953974340" ignored="false" />
-    <file path="/Dummy.txt" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383954167751" ignored="false" />
+    <file path="/a.dummy" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383976551673" ignored="false" />
+    <file path="/Dummy.txt" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383979502098" ignored="false" />
     <file path="/runner.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383940980399" ignored="false" />
     <file path="/API.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1381535209971" ignored="false" />
     <file path="/user.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383106794693" ignored="false" />
-    <file path="/action.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383233595349" ignored="false" />
+    <file path="/action.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383977852817" ignored="false" />
     <file path="/activity.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383164203248" ignored="false" />
     <file path="/category.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383105963342" ignored="false" />
-    <file path="/blog.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383947354001" ignored="false" />
+    <file path="/blog.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383973707789" ignored="false" />
     <file path="/blogpost.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1381547217983" ignored="false" />
     <file path="/discussion_forum.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1381548171022" ignored="false" />
     <file path="/document.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1381548357901" ignored="false" />
@@ -38,7 +59,7 @@
     <file path="/server.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383153056104" ignored="false" />
     <file path="$PROJECT_DIR$/../social_navigator/lib/tasks/site.rake" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382038288589" ignored="false" />
     <file path="/package.json" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382287985801" ignored="false" />
-    <file path="/spaces-client.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383163906285" ignored="false" />
+    <file path="/spaces-client.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383977894891" ignored="false" />
     <file path="$PROJECT_DIR$/../mothership/test/test_helper.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382364059286" ignored="false" />
     <file path="$PROJECT_DIR$/../mothership/test/api/v1/site_test.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382364059286" ignored="false" />
     <file path="$PROJECT_DIR$/../mothership/app/models/site.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382364059286" ignored="false" />
@@ -81,7 +102,7 @@
     <file path="/config.json" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383152694982" ignored="false" />
     <file path="/config.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383154632565" ignored="false" />
     <file path="/standalone.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383154314980" ignored="false" />
-    <file path="/folder.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383954027305" ignored="false" />
+    <file path="/folder.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383973079399" ignored="false" />
     <file path="$PROJECT_DIR$/../social_navigator/app/controllers/document_libraries_controller.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383166215117" ignored="false" />
     <file path="/folder.js" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383238118476" ignored="false" />
     <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/activities/comment_notifiers.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383515329009" ignored="false" />
@@ -151,7 +172,10 @@
     <file path="$PROJECT_DIR$/../social_navigator/script/ldapmap.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383931115200" ignored="false" />
     <file path="/ldapmap.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383930912339" ignored="false" />
     <file path="/rest.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383943139364" ignored="false" />
-    <file path="/resource.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383953431190" ignored="false" />
+    <file path="/resource.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383975265198" ignored="false" />
+    <file path="/forum.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383976901252" ignored="false" />
+    <file path="/ideastorm.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383977927872" ignored="false" />
+    <file path="/ideastorm.js" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383977916070" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,17 +198,19 @@
       <file leaf-file-name="folder.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/folder.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="0" selection-start="6369" selection-end="6369" vertical-scroll-proportion="0.0">
+            <state line="10" column="12" selection-start="672" selection-end="672" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog.coffee" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/blog.coffee">
+      <file leaf-file-name="forum.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/forum.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="1832" selection-end="1832" vertical-scroll-proportion="0.22735347">
-              <folding />
+            <state line="3" column="0" selection-start="0" selection-end="1370" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1383976900000" expanded="true" signature="140:413" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -192,25 +218,52 @@
       <file leaf-file-name="action.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/action.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="52" selection-start="937" selection-end="937" vertical-scroll-proportion="0.0">
+            <state line="15" column="55" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity.coffee" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/activity.coffee">
+      <file leaf-file-name="spaces-client.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/spaces-client.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="8" column="48" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resource.coffee" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/resource.coffee">
+      <file leaf-file-name="ideastorm.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/ideastorm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="1444" selection-end="1444" vertical-scroll-proportion="0.0">
+            <state line="73" column="34" selection-start="1839" selection-end="1848" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ideastorm.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/ideastorm.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="81" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logger.coffee" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/js/logger.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="50" selection-start="147" selection-end="147" vertical-scroll-proportion="0.1459854">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forum.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/forum.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="79" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -219,15 +272,21 @@
       <file leaf-file-name="resource.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/resource.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="85" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0">
+            <state line="15" column="36" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resource.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/resource.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="16" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1383953571000" expanded="true" signature="47:1684" placeholder="{...}" />
-                <marker date="1383953571000" expanded="true" signature="100:1637" placeholder="{...}" />
-                <marker date="1383953571000" expanded="true" signature="194:1609" placeholder="{...}" />
-                <marker date="1383953571000" expanded="true" signature="381:510" placeholder="{...}" />
-                <marker date="1383953571000" expanded="true" signature="532:869" placeholder="{&quot;method&quot;: 'DELETE'...}" />
-                <marker date="1383953571000" expanded="true" signature="1035:1388" placeholder="{...}" />
-                <marker date="1383953571000" expanded="true" signature="1389:1441" placeholder="{...}" />
+                <marker date="1383977010000" expanded="true" signature="41:338" placeholder="..." />
+                <marker date="1383977010000" expanded="true" signature="102:338" placeholder="..." />
+                <marker date="1383977010000" expanded="true" signature="182:333" placeholder="hostname: site.full_url.match(/https:\/\/(.*)$/)[1]..." />
+                <marker date="1383977010000" expanded="true" signature="385:540" placeholder="&quot;Accept&quot;: 'application/vnd.moxiesoft.spaces-v1+json'..." />
               </folding>
             </state>
           </provider>
@@ -251,11 +310,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/spaces-client.coffee" />
-        <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/activity.coffee" />
-        <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/category.coffee" />
-        <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/user.coffee" />
-        <option value="$PROJECT_DIR$/static/js/logger.coffee" />
         <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/site.coffee" />
         <option value="$PROJECT_DIR$/node_modules/xmlhttprequest/README.md" />
         <option value="$PROJECT_DIR$/node_modules/xmlhttprequest/lib/XMLHttpRequest.js" />
@@ -263,17 +317,22 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/rest.coffee" />
         <option value="$PROJECT_DIR$/static/js/runner.coffee" />
+        <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/blog.coffee" />
+        <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/folder.coffee" />
+        <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/forum.coffee" />
         <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/resource.coffee" />
         <option value="$PROJECT_DIR$/static/js/action.coffee" />
-        <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/folder.coffee" />
-        <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/blog.coffee" />
+        <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/spaces-client.coffee" />
+        <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/ideastorm.js" />
+        <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/ideastorm.coffee" />
+        <option value="$PROJECT_DIR$/static/js/logger.coffee" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1920" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="y" value="22" />
+    <option name="width" value="1440" />
+    <option name="height" value="825" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -371,10 +430,6 @@
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="runner.coffee" />
-              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -392,6 +447,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logger.coffee" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -492,7 +551,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resource.coffee" />
+              <option name="myItemId" value="ideastorm.coffee" />
               <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -545,32 +604,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="blog.coffee" />
-              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flatline" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flatline" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spaces-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity.coffee" />
               <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -801,6 +834,7 @@
       <changelist id="44ef8a29-fb4a-4cd5-8425-797ab802f2be" name="Default" comment="" />
       <changelist id="" name="dependencies" comment="" />
       <changelist id="" name="DRY, DELETE" comment="" />
+      <changelist id="73328003-b063-41e0-8e0f-6454d1163261" name="Ideastorms, Forums, More DRY" comment="" />
       <created>1381531410154</created>
       <updated>1381531410154</updated>
     </task>
@@ -844,7 +878,15 @@
       <created>1383954170212</created>
       <updated>1383954170212</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Create a REST lib">
+      <created>1383954196562</created>
+      <updated>1383954196562</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Create a REST lib">
+      <created>1383954223586</created>
+      <updated>1383954223586</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -868,21 +910,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="825" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38555443" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="0" y="641" width="1440" height="204" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3653846" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="0" y="641" width="1440" height="204" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278237" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3224822" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32142857" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33572453" sideWeight="0.6162311" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15741728" sideWeight="0.61444557" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24386339" sideWeight="0.5467033" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15710187" sideWeight="0.63461536" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39979655" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38567492" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36113936" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="102" y="46" width="1236" height="775" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292011" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44368133" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="102" y="46" width="1236" height="775" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -933,7 +975,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="DRY, DELETE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create a REST lib" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -951,6 +993,7 @@
     <MESSAGE value="Got docs working" />
     <MESSAGE value="dependencies" />
     <MESSAGE value="DRY, DELETE" />
+    <MESSAGE value="Create a REST lib" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -975,80 +1018,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/node_modules/winston/node_modules/request/node_modules/form-data/node_modules/combined-stream/lib/combined_stream.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="22" selection-start="1538" selection-end="1538" vertical-scroll-proportion="0.1904762" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/xmlhttprequest/lib/XMLHttpRequest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="459" column="24" selection-start="12323" selection-end="12332" vertical-scroll-proportion="1.7974683">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/site.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="67" selection-start="763" selection-end="763" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/folder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="31" selection-start="2505" selection-end="2505" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/session.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="28" selection-start="591" selection-end="617" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/user.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="30" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/runner.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="65" selection-start="3549" selection-end="3549" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/blog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="0" selection-start="3218" selection-end="3218" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/resource.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="85" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1383953571000" expanded="true" signature="47:1684" placeholder="{...}" />
-            <marker date="1383953571000" expanded="true" signature="100:1637" placeholder="{...}" />
-            <marker date="1383953571000" expanded="true" signature="194:1609" placeholder="{...}" />
-            <marker date="1383953571000" expanded="true" signature="381:510" placeholder="{...}" />
-            <marker date="1383953571000" expanded="true" signature="532:869" placeholder="{&quot;method&quot;: 'DELETE'...}" />
-            <marker date="1383953571000" expanded="true" signature="1035:1388" placeholder="{...}" />
-            <marker date="1383953571000" expanded="true" signature="1389:1441" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/test/util.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="65" selection-start="1929" selection-end="1929" vertical-scroll-proportion="0.108333334">
@@ -1056,37 +1025,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/resource.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="1444" selection-end="1444" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/activity.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="2" column="0" selection-start="25" selection-end="47" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/action.coffee">
+    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/session.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="52" selection-start="937" selection-end="937" vertical-scroll-proportion="0.0">
+        <state line="22" column="3" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/folder.coffee">
+    <entry file="file://$PROJECT_DIR$/static/js/action.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="0" selection-start="6369" selection-end="6369" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.92018074">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/folder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="6" selection-start="3277" selection-end="3277" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/resource.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="36" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/blog.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1832" selection-end="1832" vertical-scroll-proportion="0.22735347">
+        <state line="6" column="0" selection-start="513" selection-end="549" vertical-scroll-proportion="-0.057692308">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/forum.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="79" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/resource.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="16" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1383977010000" expanded="true" signature="41:338" placeholder="..." />
+            <marker date="1383977010000" expanded="true" signature="102:338" placeholder="..." />
+            <marker date="1383977010000" expanded="true" signature="182:333" placeholder="hostname: site.full_url.match(/https:\/\/(.*)$/)[1]..." />
+            <marker date="1383977010000" expanded="true" signature="385:540" placeholder="&quot;Accept&quot;: 'application/vnd.moxiesoft.spaces-v1+json'..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/forum.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="0" selection-end="1370" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1383976900000" expanded="true" signature="140:413" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/folder.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="12" selection-start="672" selection-end="672" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/action.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="55" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/spaces-client.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="48" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/ideastorm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="34" selection-start="1839" selection-end="1848" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/ideastorm.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="81" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/logger.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="50" selection-start="147" selection-end="147" vertical-scroll-proportion="0.1459854">
           <folding />
         </state>
       </provider>

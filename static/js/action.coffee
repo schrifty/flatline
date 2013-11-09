@@ -9,15 +9,33 @@ SEED_METADATA = [
 ]
 
 ACTION_METADATA = [
-  [5, 'Blog', 'create'],
-  [5, 'Blog', 'deleteBlog'],
-  [10, 'Blog', 'createPost', 'blog'],
-  [1, 'Category', 'create'],
-  [5, 'Group', 'create', 'category'],
-  [5, 'Group', 'create', 'group'],
   [10, 'Activity', 'create'],
-  [5, 'Folder', 'create', 'folder'],
-  [5, 'Folder', 'createDocument', 'folder']
+  [ 5, 'Blog', 'create', 'group'],
+  [ 1, 'Blog', 'updateBlog'],
+  [ 1, 'Blog', 'deleteBlog'],
+  [10, 'Blog', 'createPost', 'blog'],
+  [ 2, 'Blog', 'updatePost'],
+  [ 1, 'Blog', 'deletePost'],
+  [ 1, 'Category', 'create'],
+  [ 5, 'Folder', 'create', 'folder'],
+  [ 1, 'Folder', 'createDocument', 'folder'],
+  [ 1, 'Folder', 'deleteDocument']
+  [ 5, 'Forum', 'create', 'group'],
+  [ 1, 'Forum', 'updateForum'],
+  [ 1, 'Forum', 'deleteForum'],
+  [10, 'Forum', 'createDiscussion', 'discussion_archive'],
+  [ 2, 'Forum', 'updateDiscussion'],
+  [ 1, 'Forum', 'deleteDiscussion'],
+  [ 5, 'Group', 'create', 'category'],
+  [ 5, 'Group', 'create', 'group'],
+  [10, 'Ideastorm', 'create', 'group'],
+  [ 5, 'Ideastorm', 'updateIdeastorm'],
+  [ 1, 'Ideastorm', 'deleteIdeastorm'],
+  [10, 'Ideastorm', 'createIdea', 'ideastorm'],
+  [ 2, 'Ideastorm', 'updateIdea'],
+  [ 1, 'Ideastorm', 'deleteIdea']
+#  ['ideastorm', 'show', 100],
+#  ['ideastorm', 'show_idea', 200],
 #  [10, 'Activity', 'show']
 #    ['category', 'delete', 5],
 #    ['category', 'update', 5],
@@ -48,14 +66,6 @@ ACTION_METADATA = [
 #    ['forum', 'show_discussion', 200],
 #    ['forum', 'update', 5],
 #    ['forum', 'update_discussion', 10],
-#    ['ideastorm', 'create', 10],
-#    ['ideastorm', 'create_idea', 10],
-#    ['ideastorm', 'delete', 5],
-#    ['ideastorm', 'delete_idea', 10],
-#    ['ideastorm', 'show', 100],
-#    ['ideastorm', 'show_idea', 200],
-#    ['ideastorm', 'update', 5],
-#    ['ideastorm', 'update_idea', 10],
 #    ['user', 'delete', 30],
 #    ['user', 'show', 300],
 #    ['user', 'update', 30],
@@ -102,7 +112,7 @@ class Action
         if f = klass[action[1]]
           f.apply(klass, [site, parent, userId])
         else
-          logger.error("[%s][%s] Couldn't find Spaces.%s.%s() %j", site, userId, action[0], action[1], JSON.stringify(klass))
+          logger.error("[%s][%s] Couldn't find Spaces.%s.%s()", site.site_id, userId, action[0], action[1])
       else
         logger.error("[%s][%s] Couldn't find Spaces.%s", site, userId, action[0])
 

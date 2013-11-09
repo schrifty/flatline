@@ -6,7 +6,7 @@
 
   SEED_METADATA = [['Category', 'create'], ['Category', 'create'], ['Category', 'create'], ['Category', 'create'], ['Category', 'create']];
 
-  ACTION_METADATA = [[5, 'Blog', 'create'], [5, 'Blog', 'deleteBlog'], [10, 'Blog', 'createPost', 'blog'], [1, 'Category', 'create'], [5, 'Group', 'create', 'category'], [5, 'Group', 'create', 'group'], [10, 'Activity', 'create'], [5, 'Folder', 'create', 'folder'], [5, 'Folder', 'createDocument', 'folder']];
+  ACTION_METADATA = [[10, 'Activity', 'create'], [5, 'Blog', 'create', 'group'], [1, 'Blog', 'updateBlog'], [1, 'Blog', 'deleteBlog'], [10, 'Blog', 'createPost', 'blog'], [2, 'Blog', 'updatePost'], [1, 'Blog', 'deletePost'], [1, 'Category', 'create'], [5, 'Folder', 'create', 'folder'], [1, 'Folder', 'createDocument', 'folder'], [1, 'Folder', 'deleteDocument'], [5, 'Forum', 'create', 'group'], [1, 'Forum', 'updateForum'], [1, 'Forum', 'deleteForum'], [10, 'Forum', 'createDiscussion', 'discussion_archive'], [2, 'Forum', 'updateDiscussion'], [1, 'Forum', 'deleteDiscussion'], [5, 'Group', 'create', 'category'], [5, 'Group', 'create', 'group'], [10, 'Ideastorm', 'create', 'group'], [5, 'Ideastorm', 'updateIdeastorm'], [1, 'Ideastorm', 'deleteIdeastorm'], [10, 'Ideastorm', 'createIdea', 'ideastorm'], [2, 'Ideastorm', 'updateIdea'], [1, 'Ideastorm', 'deleteIdea']];
 
   actions = [];
 
@@ -62,7 +62,7 @@
           if (f = klass[action[1]]) {
             return f.apply(klass, [site, parent, userId]);
           } else {
-            return logger.error("[%s][%s] Couldn't find Spaces.%s.%s() %j", site, userId, action[0], action[1], JSON.stringify(klass));
+            return logger.error("[%s][%s] Couldn't find Spaces.%s.%s()", site.site_id, userId, action[0], action[1]);
           }
         } else {
           return logger.error("[%s][%s] Couldn't find Spaces.%s", site, userId, action[0]);
