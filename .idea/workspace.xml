@@ -1,65 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44ef8a29-fb4a-4cd5-8425-797ab802f2be" name="Default" comment="" />
-    <list id="73328003-b063-41e0-8e0f-6454d1163261" name="Ideastorms, Forums, More DRY" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/forum.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/forum.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/forum.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/ideastorm.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/ideastorm.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/ideastorm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/action.coffee" afterPath="$PROJECT_DIR$/static/js/action.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/action.js" afterPath="$PROJECT_DIR$/static/js/action.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/lib/blog.coffee" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/blog.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/lib/blog.js.map" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/blog.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/lib/blog.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/blog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/lib/folder.coffee" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/folder.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/lib/folder.js.map" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/folder.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/lib/folder.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/folder.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/logger.js.map" afterPath="$PROJECT_DIR$/static/js/logger.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/lib/resource.coffee" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/resource.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/lib/resource.js.map" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/resource.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/lib/resource.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/resource.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/lib/spaces-client.coffee" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/spaces-client.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/lib/spaces-client.js.map" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/spaces-client.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/spaces-client/lib/spaces-client.js" afterPath="$PROJECT_DIR$/node_modules/spaces-client/lib/spaces-client.js" />
+    <list default="true" id="44ef8a29-fb4a-4cd5-8425-797ab802f2be" name="Default" comment="Ideastorms, Forums, More DRY">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flatline.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.jade" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382648984179" ignored="false" />
+    <file path="/index.jade" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384797411755" ignored="false" />
     <file path="/script.js" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1381533435599" ignored="false" />
     <file path="/server.js" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1381725488053" ignored="false" />
-    <file path="/a.dummy" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383976551673" ignored="false" />
-    <file path="/Dummy.txt" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383979502098" ignored="false" />
-    <file path="/runner.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383940980399" ignored="false" />
+    <file path="/a.dummy" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1385142325467" ignored="false" />
+    <file path="/Dummy.txt" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1385149026400" ignored="false" />
+    <file path="/runner.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1385139268454" ignored="false" />
     <file path="/API.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1381535209971" ignored="false" />
-    <file path="/user.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383106794693" ignored="false" />
-    <file path="/action.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383977852817" ignored="false" />
-    <file path="/activity.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383164203248" ignored="false" />
-    <file path="/category.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383105963342" ignored="false" />
-    <file path="/blog.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383973707789" ignored="false" />
+    <file path="/user.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384573071886" ignored="false" />
+    <file path="/action.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1385141799370" ignored="false" />
+    <file path="/activity.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384384702234" ignored="false" />
+    <file path="/category.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1385073471804" ignored="false" />
+    <file path="/blog.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384379750943" ignored="false" />
     <file path="/blogpost.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1381547217983" ignored="false" />
     <file path="/discussion_forum.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1381548171022" ignored="false" />
     <file path="/document.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1381548357901" ignored="false" />
-    <file path="/group.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383106014493" ignored="false" />
+    <file path="/group.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384377549104" ignored="false" />
     <file path="/idea.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1381548229790" ignored="false" />
     <file path="/wiki.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1381548307747" ignored="false" />
-    <file path="/site.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383234530338" ignored="false" />
-    <file path="/layout.jade" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382026308359" ignored="false" />
+    <file path="/site.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384799946333" ignored="false" />
+    <file path="/layout.jade" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384034995470" ignored="false" />
     <file path="/runner.js.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1381720746061" ignored="false" />
     <file path="/server.js.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1381960229813" ignored="false" />
     <file path="$PROJECT_DIR$/../mothership/app/controllers/pods_controller.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1381727827625" ignored="false" />
-    <file path="$PROJECT_DIR$/../mothership/Gemfile" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383150943071" ignored="false" />
+    <file path="$PROJECT_DIR$/../mothership/Gemfile" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384370474282" ignored="false" />
     <file path="$PROJECT_DIR$/../mothership/config/routes.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1381727827625" ignored="false" />
     <file path="/FileLoader.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1381812763390" ignored="false" />
     <file path="/assets.js" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382019064695" ignored="false" />
-    <file path="/flatline.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382738869792" ignored="false" />
-    <file path="/server.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383153056104" ignored="false" />
+    <file path="/flatline.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1385147305684" ignored="false" />
+    <file path="/server.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384793958346" ignored="false" />
     <file path="$PROJECT_DIR$/../social_navigator/lib/tasks/site.rake" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382038288589" ignored="false" />
     <file path="/package.json" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382287985801" ignored="false" />
-    <file path="/spaces-client.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383977894891" ignored="false" />
+    <file path="/spaces-client.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1385048925264" ignored="false" />
     <file path="$PROJECT_DIR$/../mothership/test/test_helper.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382364059286" ignored="false" />
     <file path="$PROJECT_DIR$/../mothership/test/api/v1/site_test.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382364059286" ignored="false" />
     <file path="$PROJECT_DIR$/../mothership/app/models/site.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382364059286" ignored="false" />
@@ -77,10 +55,10 @@
     <file path="$PROJECT_DIR$/../social_navigator/app/liquid_views/clients/show.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382627977854" ignored="false" />
     <file path="$PROJECT_DIR$/../social_navigator/app/controllers/user_invites_controller.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382627977854" ignored="false" />
     <file path="$PROJECT_DIR$/../social_navigator/test/unit/user_test.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382627977854" ignored="false" />
-    <file path="$PROJECT_DIR$/../social_navigator/app/models/user.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383148970027" ignored="false" />
+    <file path="$PROJECT_DIR$/../social_navigator/app/models/user.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1385056212257" ignored="false" />
     <file path="$PROJECT_DIR$/../social_navigator/public/javascripts/email_area.js" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382627977854" ignored="false" />
     <file path="$PROJECT_DIR$/../social_navigator/db/mongo_indexes.yml" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382627977854" ignored="false" />
-    <file path="$PROJECT_DIR$/../social_navigator/Gemfile" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383013088589" ignored="false" />
+    <file path="$PROJECT_DIR$/../social_navigator/Gemfile" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1385056212256" ignored="false" />
     <file path="$PROJECT_DIR$/../social_navigator/public/javascripts/tagging.js" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382669181543" ignored="false" />
     <file path="$PROJECT_DIR$/../social_navigator/app/controllers/users_controller.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382627977854" ignored="false" />
     <file path="$PROJECT_DIR$/../social_navigator/test/unit/kb/poller_test.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382627977854" ignored="false" />
@@ -88,35 +66,35 @@
     <file path="$PROJECT_DIR$/../social_navigator/app/liquid_drops/user_drop.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382627977854" ignored="false" />
     <file path="$PROJECT_DIR$/../social_navigator/app/models/document_library.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382627977854" ignored="false" />
     <file path="$PROJECT_DIR$/../little_prince/app/models/site.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382630356213" ignored="false" />
-    <file path="/session.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383106276602" ignored="false" />
+    <file path="/session.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1385148612170" ignored="false" />
     <file path="/action.js" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382813275254" ignored="false" />
     <file path="/math-test-sadie" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383508444818" ignored="false" />
-    <file path="/site.js" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382929838144" ignored="false" />
+    <file path="/site.js" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384718331968" ignored="false" />
     <file path="/.gitignore" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383924977195" ignored="false" />
-    <file path="/logger.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383086233039" ignored="false" />
+    <file path="/logger.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1385050954817" ignored="false" />
     <file path="$PROJECT_DIR$/../social_navigator/test/functional/groups_controller_test.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382991258790" ignored="false" />
     <file path="/groups_controller_test.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382991257019" ignored="false" />
     <file path="$PROJECT_DIR$/../social_navigator/test/api/v1/documents_api_test.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1382996981391" ignored="false" />
     <file path="$PROJECT_DIR$/../social_navigator/app/controllers/node_wizard_helper.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383082053845" ignored="false" />
-    <file path="$PROJECT_DIR$/../mothership/app/assets/javascripts/sites.js.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383150943071" ignored="false" />
+    <file path="$PROJECT_DIR$/../mothership/app/assets/javascripts/sites.js.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384281071343" ignored="false" />
     <file path="/config.json" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383152694982" ignored="false" />
     <file path="/config.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383154632565" ignored="false" />
     <file path="/standalone.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383154314980" ignored="false" />
-    <file path="/folder.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383973079399" ignored="false" />
+    <file path="/folder.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384817358522" ignored="false" />
     <file path="$PROJECT_DIR$/../social_navigator/app/controllers/document_libraries_controller.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383166215117" ignored="false" />
     <file path="/folder.js" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383238118476" ignored="false" />
     <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/activities/comment_notifiers.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383515329009" ignored="false" />
     <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/blog_posts/show.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383515343438" ignored="false" />
     <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/discussions/show.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383515369297" ignored="false" />
     <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/document_libraries/show.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383515380075" ignored="false" />
-    <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/documents/list.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383515390801" ignored="false" />
+    <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/documents/list.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384659300250" ignored="false" />
     <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/emails/activity_digest.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383515403612" ignored="false" />
     <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/header/toolbar.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383515437403" ignored="false" />
     <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/ideas/show.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383515450693" ignored="false" />
-    <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/joyrides/welcome_to_spaces.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383515461812" ignored="false" />
+    <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/joyrides/welcome_to_spaces.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384659337716" ignored="false" />
     <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/kb/articles/article_display.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383515471481" ignored="false" />
     <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/kb/articles/index.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383515479314" ignored="false" />
-    <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/kb/kbs/browse.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383515497366" ignored="false" />
+    <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/kb/kbs/browse.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384659374721" ignored="false" />
     <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/local_activities/_cached_activity.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383515505952" ignored="false" />
     <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/local_activities/activity_status.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383515518324" ignored="false" />
     <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/local_activities/microblogger.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383515536618" ignored="false" />
@@ -155,27 +133,63 @@
     <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/works/dashboard.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383515309572" ignored="false" />
     <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/works/show.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383515309572" ignored="false" />
     <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/projects/dashboard.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383515309572" ignored="false" />
-    <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/users/show.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383515309571" ignored="false" />
-    <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/default/index.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383515355096" ignored="false" />
+    <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/users/show.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384659489690" ignored="false" />
+    <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/default/index.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384659300250" ignored="false" />
     <file path="/_tagger_sidebar.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383513405878" ignored="false" />
-    <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/users/edit.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383515666762" ignored="false" />
-    <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/users/overview.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383366243390" ignored="false" />
-    <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/header/menus.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383515309573" ignored="false" />
-    <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/footer/footer.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383515417265" ignored="false" />
-    <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/user_wizard/details.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383515309572" ignored="false" />
+    <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/users/edit.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384659423150" ignored="false" />
+    <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/users/overview.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384659440359" ignored="false" />
+    <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/header/menus.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384658586653" ignored="false" />
+    <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/footer/footer.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384657824452" ignored="false" />
+    <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/user_wizard/details.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384658459998" ignored="false" />
     <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/menus/group_page_add.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383450853015" ignored="false" />
     <file path="$USER_HOME$/bin/math-test-sadie" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383508609732" ignored="false" />
-    <file path="$PROJECT_DIR$/../social_navigator/db/mongrations/20130905163203_convert_attns_to_mentions.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383581565123" ignored="false" />
+    <file path="$PROJECT_DIR$/../social_navigator/db/mongrations/20130905163203_convert_attns_to_mentions.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1385056212256" ignored="false" />
     <file path="/20130905163203_convert_attns_to_mentions.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383519860787" ignored="false" />
     <file path="$PROJECT_DIR$/../social_navigator/lib/mention_factory.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383522846417" ignored="false" />
     <file path="/mention_factory.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383522848103" ignored="false" />
-    <file path="$PROJECT_DIR$/../social_navigator/script/ldapmap.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383931115200" ignored="false" />
-    <file path="/ldapmap.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383930912339" ignored="false" />
+    <file path="$PROJECT_DIR$/../social_navigator/script/ldapmap.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384363280677" ignored="false" />
+    <file path="/ldapmap.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384363280677" ignored="false" />
     <file path="/rest.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383943139364" ignored="false" />
-    <file path="/resource.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383975265198" ignored="false" />
-    <file path="/forum.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383976901252" ignored="false" />
-    <file path="/ideastorm.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383977927872" ignored="false" />
+    <file path="/resource.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1385147100746" ignored="false" />
+    <file path="/forum.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1385049159255" ignored="false" />
+    <file path="/ideastorm.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1385055603893" ignored="false" />
     <file path="/ideastorm.js" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1383977916070" ignored="false" />
+    <file path="/stats.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384786867362" ignored="false" />
+    <file path="$PROJECT_DIR$/../social_navigator/app/controllers/groups_controller.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384281071343" ignored="false" />
+    <file path="$PROJECT_DIR$/../social_navigator/app/models/local_activity.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1385056212257" ignored="false" />
+    <file path="$PROJECT_DIR$/../social_navigator/app/models/node.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1385056212257" ignored="false" />
+    <file path="/spaces-client.js" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384384727757" ignored="false" />
+    <file path="/*.regexp" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384794138074" ignored="false" />
+    <file path="$PROJECT_DIR$/../mothership/app/models/ldap_configuration.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384466304620" ignored="false" />
+    <file path="/ldap_configuration.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384471319383" ignored="false" />
+    <file path="$PROJECT_DIR$/../social_navigator/app/models/ldap_configuration.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1385056212257" ignored="false" />
+    <file path="$PROJECT_DIR$/../social_navigator/app/controllers/admin/users_controller.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384470401888" ignored="false" />
+    <file path="/session.js" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384491520870" ignored="false" />
+    <file path="/user-session.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384491525586" ignored="false" />
+    <file path="/stats.js" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384494373181" ignored="false" />
+    <file path="$PROJECT_DIR$/../social_navigator/script/upgrades" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384622034398" ignored="false" />
+    <file path="$PROJECT_DIR$/../social_navigator/script/tag-spaces" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384620802038" ignored="false" />
+    <file path="/upgrades" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384622034398" ignored="false" />
+    <file path="/upgrade-custom-branches" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384716587103" ignored="false" />
+    <file path="$USER_HOME$/bin/upgrade-custom-branches" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384716587104" ignored="false" />
+    <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/groups/my_groups.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384659311372" ignored="false" />
+    <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/header/_search.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384659325707" ignored="false" />
+    <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/joyrides/whats_new.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384659354582" ignored="false" />
+    <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/searches/controls.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384659389743" ignored="false" />
+    <file path="$PROJECT_DIR$/../spaces-liquid-templates/liquid_views/searches/local_search.liquid" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384659403885" ignored="false" />
+    <file path="$USER_HOME$/bin/upgrade-diff-links" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384716572606" ignored="false" />
+    <file path="/upgrade-diff-links" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384660084338" ignored="false" />
+    <file path="$PROJECT_DIR$/../mothership/lib/site_settings_validator.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384722133536" ignored="false" />
+    <file path="/site_settings_validator.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384722127364" ignored="false" />
+    <file path="/pod.coffee" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384795713616" ignored="false" />
+    <file path="/actions" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1385134888427" ignored="false" />
+    <file path="/resource.js" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384816995702" ignored="false" />
+    <file path="$PROJECT_DIR$/../mothership/app/models/pod.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1384926728511" ignored="false" />
+    <file path="$PROJECT_DIR$/../social_navigator/script/disney/import.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1385056212257" ignored="false" />
+    <file path="/import.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1385044884389" ignored="false" />
+    <file path="$PROJECT_DIR$/../social_navigator/app/models/blog.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1385056212257" ignored="false" />
+    <file path="$PROJECT_DIR$/../social_navigator/config/routes.rb" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1385056212257" ignored="false" />
+    <file path="/scratchpad" changelist="44ef8a29-fb4a-4cd5-8425-797ab802f2be" time="1385139628996" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,22 +209,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="folder.coffee" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/folder.coffee">
+      <file leaf-file-name="session.coffee" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/js/session.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="12" selection-start="672" selection-end="672" vertical-scroll-proportion="0.0">
+            <state line="188" column="0" selection-start="5405" selection-end="5405" vertical-scroll-proportion="12.477876">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forum.coffee" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/forum.coffee">
+      <file leaf-file-name="runner.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/runner.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="0" selection-end="1370" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1383976900000" expanded="true" signature="140:413" placeholder="..." />
-              </folding>
+            <state line="71" column="30" selection-start="2423" selection-end="2423" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -218,61 +230,7 @@
       <file leaf-file-name="action.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/action.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="55" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spaces-client.coffee" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/spaces-client.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="48" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ideastorm.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/ideastorm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="34" selection-start="1839" selection-end="1848" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ideastorm.coffee" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/ideastorm.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="81" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logger.coffee" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/js/logger.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="50" selection-start="147" selection-end="147" vertical-scroll-proportion="0.1459854">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forum.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/forum.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="79" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resource.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/resource.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="36" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
+            <state line="74" column="16" selection-start="2578" selection-end="2578" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -281,13 +239,44 @@
       <file leaf-file-name="resource.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/resource.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="16" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1383977010000" expanded="true" signature="41:338" placeholder="..." />
-                <marker date="1383977010000" expanded="true" signature="102:338" placeholder="..." />
-                <marker date="1383977010000" expanded="true" signature="182:333" placeholder="hostname: site.full_url.match(/https:\/\/(.*)$/)[1]..." />
-                <marker date="1383977010000" expanded="true" signature="385:540" placeholder="&quot;Accept&quot;: 'application/vnd.moxiesoft.spaces-v1+json'..." />
-              </folding>
+            <state line="14" column="72" selection-start="426" selection-end="426" vertical-scroll-proportion="-4.8">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flatline.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/flatline.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="88" column="5" selection-start="2295" selection-end="2295" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jade" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/index.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scratchpad" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scratchpad">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="20" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spaces-client.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/spaces-client.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="17" selection-start="1506" selection-end="1506" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -310,22 +299,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/site.coffee" />
-        <option value="$PROJECT_DIR$/node_modules/xmlhttprequest/README.md" />
-        <option value="$PROJECT_DIR$/node_modules/xmlhttprequest/lib/XMLHttpRequest.js" />
-        <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/folder.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/rest.coffee" />
-        <option value="$PROJECT_DIR$/static/js/runner.coffee" />
-        <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/blog.coffee" />
         <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/folder.coffee" />
+        <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/user.coffee" />
+        <option value="$PROJECT_DIR$/static/js/action.js" />
         <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/forum.coffee" />
-        <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/resource.coffee" />
-        <option value="$PROJECT_DIR$/static/js/action.coffee" />
-        <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/spaces-client.coffee" />
-        <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/ideastorm.js" />
-        <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/ideastorm.coffee" />
         <option value="$PROJECT_DIR$/static/js/logger.coffee" />
+        <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/ideastorm.coffee" />
+        <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/spaces-client.coffee" />
+        <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/category.coffee" />
+        <option value="$PROJECT_DIR$/actions" />
+        <option value="$PROJECT_DIR$/static/js/runner.coffee" />
+        <option value="$PROJECT_DIR$/scratchpad" />
+        <option value="$PROJECT_DIR$/static/js/action.coffee" />
+        <option value="$PROJECT_DIR$/node_modules/spaces-client/lib/resource.coffee" />
+        <option value="$PROJECT_DIR$/static/js/flatline.coffee" />
+        <option value="$PROJECT_DIR$/views/index.jade" />
+        <option value="$PROJECT_DIR$/static/js/session.coffee" />
       </list>
     </option>
   </component>
@@ -376,7 +365,6 @@
       <sortByType ProjectPane="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -409,7 +397,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
+              <option name="myItemId" value="server.coffee" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flatline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flatline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -429,6 +431,50 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flatline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flatline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="session.coffee" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flatline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flatline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="runner.coffee" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -471,8 +517,66 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="flatline.coffee" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flatline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flatline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config.coffee" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flatline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flatline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="action.coffee" />
               <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flatline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flatline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -527,6 +631,84 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user.coffee" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flatline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flatline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spaces-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spaces-client.coffee" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flatline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flatline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spaces-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flatline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flatline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spaces-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resource.coffee" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -552,6 +734,58 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ideastorm.coffee" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flatline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flatline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spaces-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="group.coffee" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flatline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flatline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spaces-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum.coffee" />
               <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -603,6 +837,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="category.coffee" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flatline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flatline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spaces-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="blog.coffee" />
               <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
             </PATH_ELEMENT>
@@ -621,8 +881,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="socket.io" />
+              <option name="myItemId" value="spaces-client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activity.coffee" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -635,89 +903,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socket.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socket.io-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flatline" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flatline" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socket.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socket.io-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flatline" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flatline" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socket.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="http.proxy" />
-    <property name="last_opened_file_path" value="$USER_HOME$/bin/math-test-sadie" />
+    <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../deleteme" />
     <property name="FullScreen" value="false" />
-    <property name="GoToClass.includeJavaFiles" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToClass.includeJavaFiles" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -725,14 +930,14 @@
       <recent name="$PROJECT_DIR$/node_modules/spaces-site" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/js" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/node_modules/spaces-client/lib" />
-      <recent name="$PROJECT_DIR$/static/js" />
       <recent name="$PROJECT_DIR$/static/js/api" />
       <recent name="$PROJECT_DIR$/node_modules/spaces-site/lib" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.Run">
+  <component name="RunManager" selected="Node.js.Web Run">
     <configuration default="true" type="NodeJSRemoteDebug" factoryName="Node.js Remote Debug">
       <node-js-remote-debug />
       <method />
@@ -796,7 +1001,12 @@
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="/usr/local/bin/node" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
-    <configuration default="false" name="Run" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="/usr/local/bin/node" path-to-js-file="standalone.coffee" working-dir="$PROJECT_DIR$/" coffeescript-path="/usr/local/bin/coffee" coffeescript-run="true">
+    <configuration default="false" name="Standalone" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="/usr/local/bin/node" path-to-js-file="standalone.coffee" working-dir="$PROJECT_DIR$/" coffeescript-path="/usr/local/bin/coffee" coffeescript-run="true">
+      <RunnerSettings RunnerId="NodeJS.run" />
+      <ConfigurationWrapper RunnerId="NodeJS.run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Web Run" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="/usr/local/bin/node" path-to-js-file="server.coffee" working-dir="$PROJECT_DIR$/" coffeescript-path="/usr/local/bin/coffee" coffeescript-run="true">
       <RunnerSettings RunnerId="NodeJS.run" />
       <ConfigurationWrapper RunnerId="NodeJS.run" />
       <method />
@@ -806,9 +1016,10 @@
       <ConfigurationWrapper RunnerId="NodeJS.run" />
       <method />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.Run" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.Debug" />
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.Standalone" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.Web Run" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.Debug" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -832,9 +1043,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="44ef8a29-fb4a-4cd5-8425-797ab802f2be" name="Default" comment="" />
-      <changelist id="" name="dependencies" comment="" />
-      <changelist id="" name="DRY, DELETE" comment="" />
-      <changelist id="73328003-b063-41e0-8e0f-6454d1163261" name="Ideastorms, Forums, More DRY" comment="" />
+      <changelist id="" name="Added an input parser," comment="" />
       <created>1381531410154</created>
       <updated>1381531410154</updated>
     </task>
@@ -886,7 +1095,15 @@
       <created>1383954223586</created>
       <updated>1383954223586</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Ideastorms, Forums, More DRY">
+      <created>1383979532085</created>
+      <updated>1383979532085</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added an input parser and a mess of other changes.">
+      <created>1385149031875</created>
+      <updated>1385149031876</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -914,16 +1131,16 @@
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3653846" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="0" y="641" width="1440" height="204" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6510989" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="0" y="641" width="1440" height="204" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278237" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32142857" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30494505" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24386339" sideWeight="0.5467033" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15710187" sideWeight="0.63461536" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24386339" sideWeight="0.68565613" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16929698" sideWeight="0.3489011" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39979655" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38567492" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44368133" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="102" y="46" width="1236" height="775" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3653846" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3489011" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="102" y="46" width="1236" height="775" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -975,7 +1192,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create a REST lib" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added an input parser and a mess of other changes." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -994,6 +1211,8 @@
     <MESSAGE value="dependencies" />
     <MESSAGE value="DRY, DELETE" />
     <MESSAGE value="Create a REST lib" />
+    <MESSAGE value="Ideastorms, Forums, More DRY" />
+    <MESSAGE value="Added an input parser and a mess of other changes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1014,125 +1233,121 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="10" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/test/util.test.js">
+    <entry file="file://$PROJECT_DIR$/static/js/logger.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="65" selection-start="1929" selection-end="1929" vertical-scroll-proportion="0.108333334">
+        <state line="11" column="85" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/activity.coffee">
+    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/user.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="25" selection-end="47" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/session.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="3" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/action.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.92018074">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/folder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="6" selection-start="3277" selection-end="3277" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/resource.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="36" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/blog.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="513" selection-end="549" vertical-scroll-proportion="-0.057692308">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/forum.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="79" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/resource.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="16" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1383977010000" expanded="true" signature="41:338" placeholder="..." />
-            <marker date="1383977010000" expanded="true" signature="102:338" placeholder="..." />
-            <marker date="1383977010000" expanded="true" signature="182:333" placeholder="hostname: site.full_url.match(/https:\/\/(.*)$/)[1]..." />
-            <marker date="1383977010000" expanded="true" signature="385:540" placeholder="&quot;Accept&quot;: 'application/vnd.moxiesoft.spaces-v1+json'..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/forum.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="0" selection-end="1370" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1383976900000" expanded="true" signature="140:413" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/folder.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="12" selection-start="672" selection-end="672" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/action.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="55" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/spaces-client.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="48" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/ideastorm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="34" selection-start="1839" selection-end="1848" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/ideastorm.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="81" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+        <state line="5" column="0" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/logger.coffee">
+    <entry file="file://$PROJECT_DIR$/static/js/session.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="50" selection-start="147" selection-end="147" vertical-scroll-proportion="0.1459854">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/group.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/blog.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="45" selection-start="2387" selection-end="2387" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/category.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="73" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/actions">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="68" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scratchpad">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="20" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/runner.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="30" selection-start="2423" selection-end="2423" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/spaces-client.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="17" selection-start="1506" selection-end="1506" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/action.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="16" selection-start="2578" selection-end="2578" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spaces-client/lib/resource.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="72" selection-start="426" selection-end="426" vertical-scroll-proportion="-4.8">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/flatline.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="5" selection-start="2295" selection-end="2295" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/session.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="188" column="0" selection-start="5405" selection-end="5405" vertical-scroll-proportion="12.477876">
           <folding />
         </state>
       </provider>
