@@ -23,9 +23,14 @@ connect = require("connect")
 express = require("express")
 $ = require("jquery")
 Runner = require("./static/js/runner")
-logger = require("./static/js/logger")
-Config = require("./static/js/config")
 Spaces = require("spaces-client")
+
+logger = require("./static/js/logger")
+Spaces.setLogger(logger)
+
+Config = require("./static/js/config")
+Spaces.setMothershipURL(Config.mothershipUrl)
+Spaces.setApiKey(Config.apiKey)
 
 port = (process.env.PORT or 8081)
 
@@ -35,7 +40,7 @@ server.configure ->
   server.set "view options",
     layout: false
 
-  server.use express.logger('dev')
+#  server.use express.logger('dev')
   server.use express.favicon()
   server.use connect.bodyParser()
   server.use express.cookieParser()
@@ -66,14 +71,16 @@ server.listen port
 # socket.io
 io = require("socket.io")
 io = io.listen(server)
+io.set('log level', 1)
 io.sockets.on "connection", (socket) ->
-  logger.debug("Client Connected")
-  socket.on "message", (data) ->
-    socket.broadcast.emit "server_message", data
-    socket.emit "server_message", data
-
-  socket.on "disconnect", ->
-    logger.debug("Client Disconnected.")
+  Spaces.setSocket(socket)
+#  logger.debug("Client Connected")
+#  socket.on "message", (data) ->
+#    socket.broadcast.emit "server_message", data
+#    socket.emit "server_message", data
+#
+#  socket.on "disconnect", ->
+#    logger.debug("Client Disconnected.")
 
 server.get "/", (req, res) ->
   res.render "index.jade",

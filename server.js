@@ -16,11 +16,17 @@
 
   Runner = require("./static/js/runner");
 
+  Spaces = require("spaces-client");
+
   logger = require("./static/js/logger");
+
+  Spaces.setLogger(logger);
 
   Config = require("./static/js/config");
 
-  Spaces = require("spaces-client");
+  Spaces.setMothershipURL(Config.mothershipUrl);
+
+  Spaces.setApiKey(Config.apiKey);
 
   port = process.env.PORT || 8081;
 
@@ -31,7 +37,6 @@
     server.set("view options", {
       layout: false
     });
-    server.use(express.logger('dev'));
     server.use(express.favicon());
     server.use(connect.bodyParser());
     server.use(express.cookieParser());
@@ -73,15 +78,10 @@
 
   io = io.listen(server);
 
+  io.set('log level', 1);
+
   io.sockets.on("connection", function(socket) {
-    logger.debug("Client Connected");
-    socket.on("message", function(data) {
-      socket.broadcast.emit("server_message", data);
-      return socket.emit("server_message", data);
-    });
-    return socket.on("disconnect", function() {
-      return logger.debug("Client Disconnected.");
-    });
+    return Spaces.setSocket(socket);
   });
 
   server.get("/", function(req, res) {

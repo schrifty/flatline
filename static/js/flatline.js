@@ -3,59 +3,133 @@
   window.Flatline || (window.Flatline = {});
 
   $(document).ready(function() {
-    $('#sender').on('click', function(event) {
+    this.started = false;
+    io.connect().on("stats", function(data) {
+      var activityChart, rateChart;
+      console.log(data);
+      if (this.started || data.stats.activityRate > 0 || data.stats.errorRate > 0 || data.stats.userCount > 0 || data.stats.siteCount > 0) {
+        this.started = true;
+        rateChart = $('#rate-chart').highcharts();
+        rateChart.get('app-server-count').addPoint([data.ts, data.stats.appServerCount], true);
+        rateChart.get('job-server-count').addPoint([data.ts, data.stats.jobServerCount], true);
+        rateChart.get('activity-rate').addPoint([data.ts, data.stats.activityRate], true);
+        rateChart.get('error-rate').addPoint([data.ts, data.stats.errorRate], true);
+        activityChart = $('#activity-chart').highcharts();
+        activityChart.get('site-count').addPoint([data.ts, data.stats.siteCount], true);
+        activityChart.get('user-count').addPoint([data.ts, data.stats.userCount], true);
+        return activityChart.get('activity-count').addPoint([data.ts, data.stats.activityCount], true);
+      }
+    });
+    return $('#sender').on('click', function(event) {
       return Flatline.start();
-    });
-    $('#login').on('click', function(event) {
-      return Flatline.login();
-    });
-    return $('#createuser').on('click', function(event) {
-      return Flatline.createUser();
     });
   });
 
   Flatline.start = function() {
     var data;
+    $('#rate-chart').highcharts({
+      chart: {
+        type: 'line'
+      },
+      title: {
+        text: 'Activity Rate v. Servers'
+      },
+      xAxis: {
+        type: 'datetime'
+      },
+      yAxis: [
+        {
+          title: {
+            id: 'rate-axis',
+            text: 'Rate'
+          }
+        }, {
+          opposite: true,
+          title: {
+            id: 'server-axis',
+            text: 'Server Count'
+          }
+        }
+      ],
+      series: [
+        {
+          data: [],
+          id: 'activity-rate',
+          name: 'Activity Rate'
+        }, {
+          data: [],
+          id: 'error-rate',
+          name: 'Error Rate'
+        }, {
+          data: [],
+          id: 'app-server-count',
+          name: 'App Servers',
+          yAxis: 1
+        }, {
+          data: [],
+          id: 'job-server-count',
+          name: 'Job Servers',
+          yAxis: 1
+        }
+      ],
+      plotOptions: {
+        series: {
+          marker: {
+            enabled: false
+          }
+        }
+      }
+    });
+    $('#activity-chart').highcharts({
+      chart: {
+        type: 'line'
+      },
+      title: {
+        text: 'Activity v. Sites'
+      },
+      xAxis: {
+        type: 'datetime'
+      },
+      yAxis: [
+        {
+          title: {
+            id: 'activity-axis',
+            text: 'Activities'
+          }
+        }, {
+          opposite: true,
+          title: {
+            id: 'site-axis',
+            text: 'Sites'
+          }
+        }
+      ],
+      series: [
+        {
+          data: [],
+          id: 'user-count',
+          name: 'User Count'
+        }, {
+          data: [],
+          id: 'activity-count',
+          name: 'Activity Count'
+        }, {
+          data: [],
+          id: 'site-count',
+          name: 'Site Count',
+          yAxis: 1
+        }
+      ],
+      plotOptions: {
+        series: {
+          marker: {
+            enabled: false
+          }
+        }
+      }
+    });
     data = {};
     return $.ajax('/run', {
-      type: 'POST',
-      data: data,
-      error: function(jqXHR, textStatus, errorThrown) {
-        return console.log(textStatus + " - " + errorThrown + " - " + JSON.stringify(jqXHR));
-      }
-    });
-  };
-
-  Flatline.login = function() {
-    var data;
-    data = {
-      site: {
-        sub_domain: 'xxjess',
-        domain: 'moxiedev.com',
-        full_url: "https://xxjess.moxiedev.com",
-        users: {}
-      }
-    };
-    return $.ajax('/login', {
-      type: 'POST',
-      data: data,
-      error: function(jqXHR, textStatus, errorThrown) {
-        return console.log(textStatus + " - " + errorThrown + " - " + JSON.stringify(jqXHR));
-      }
-    });
-  };
-
-  Flatline.createUser = function() {
-    var data;
-    data = {
-      site: {
-        sub_domain: 'xxjess',
-        domain: 'moxiedev.com',
-        full_url: "https://xxjess.moxiedev.com",
-        users: {}
-      }
-    };
-    return $.ajax('/createuser', {
       type: 'POST',
       data: data,
       error: function(jqXHR, textStatus, errorThrown) {
