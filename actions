@@ -1,0 +1,93 @@
+# Use this file to drive the tests. Flatline uses flexible regexes to parse this file, but things will go most smoothly if you copy
+# the syntax from an existing test
+
+# Site seeds - run once per site, before users are added to the site. These seeds will provide the prereqs for other activities.
+#[Site] Create a category
+#[Site] Create a category
+#[Site] Create a category
+#[Site] Create a category
+#[Site] Create a category in a category
+#[Site] Create a category in a category
+#[Site] Create a category in a category
+
+# User seeds - run once per new user before other activities. These seeds will provide the prereqs for other activities.
+[User] Create a category
+[User] Create a group in a category
+[User] Create a group in a category
+[User] Create a group in a category
+[User] Create a group in a group
+[User] Create an ideastorm in a group
+[User] Create a forum in a group
+[User] Create a blog in a group
+
+# Test Composition
+[10] Create an activity
+[5] Create a blog in a group
+[1] Update a blog
+[1] Delete a blog
+[10] Create a blogpost
+[2] Update a blogpost
+[1] delete a blogpost
+[1] create a category
+[5] create a folder in a folder
+[1] create a document in a folder # BEWARE - this costs money!
+[1] delete a document
+[5] create a forum in a group
+[1] update a forum
+[1] delete a forum
+[10] create a discussion
+[2] update a discussion
+[1] delete a discussion
+[5] create a group in a category
+[5] create a group in a group
+[10] create an ideastorm in a group
+[2] update an ideastorm
+[10] create an idea
+[2] update an idea
+[1] delete an idea
+
+#
+##  ['ideastorm', 'show', 100],
+##  ['ideastorm', 'show_idea', 200],
+##  [10, 'Activity', 'show']
+##    ['category', 'delete', 5],
+##    ['category', 'update', 5],
+##    ['category', 'show', 100],
+##    ['group', 'delete', 10],
+##    ['group', 'show', 200],
+##    ['group', 'update', 10],
+##    ['blog', 'delete', 5],
+##    ['blog', 'deletePost', 10],
+##    ['blog', 'show', 100],
+##    ['blog', 'showPost', 200],
+##    ['blog', 'showMyPosts', 200],
+##    ['blog', 'update', 5],
+##    ['blog', 'updatePost', 10],
+##    ['folder', 'delete', 5]
+##    ['folder', 'delete_document', 10],
+##    ['folder', 'lock_document', 5],
+##    ['folder', 'show', 100],
+##    ['folder', 'show_document', 200],
+##    ['folder', 'unlock_document', 5],
+##    ['folder', 'update', 5],
+##    ['folder', 'update_document', 10],
+##    ['forum', 'create', 10],
+##    ['forum', 'create_discussion', 10],
+##    ['forum', 'delete', 5],
+##    ['forum', 'delete_discussion', 10],
+##    ['forum', 'show', 100],
+##    ['forum', 'show_discussion', 200],
+##    ['forum', 'update', 5],
+##    ['forum', 'update_discussion', 10],
+##    ['user', 'delete', 30],
+##    ['user', 'show', 300],
+##    ['user', 'update', 30],
+##    ['wiki', 'create', 10],
+##    ['wiki', 'create_wikipage', 10],
+##    ['wiki', 'delete', 5],
+##    ['wiki', 'delete_wikipage', 10],
+##    ['wiki', 'show', 100],
+##    ['wiki', 'show_wikipage', 200],
+##    ['wiki', 'update', 5],
+##    ['wiki', 'update_wikipage', 10]
+#]
