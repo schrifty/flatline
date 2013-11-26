@@ -78,7 +78,7 @@ class Action
     }
 
     sessionId = Session.getUserSessionId(site, userId)
-    Spaces.process(site, userId, action, sessionId, parentId, eventHandlers)
+    Spaces.process(site, userId, action, sessionId, resource, parentId, eventHandlers)
 
   @readActions = (oncomplete) ->
     Spaces.logger.debug "Action.readActions: Loading actions file"

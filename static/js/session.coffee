@@ -157,9 +157,7 @@ class Session
   @getRandomUserItemIdOfType = (site, userId, type) ->
     if @items[userId]
       if list = @items[userId][type]
-        n = Math.floor(Math.random() * list.length)
-#        logger.debug("[%s][%s] Session.getRandomUserItemIdOfType: um what %s", site.site_id, userId, JSON.stringify(list[n]))
-        return list[n]
+        return list[Math.floor(Math.random() * list.length)]
       else
         logger.debug("[%s][%s] Session.getRandomUserItemIdOfType: user doesn't have a valid %s", site.site_id, userId, type)
     else

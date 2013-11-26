@@ -172,11 +172,10 @@
     };
 
     Session.getRandomUserItemIdOfType = function(site, userId, type) {
-      var list, n;
+      var list;
       if (this.items[userId]) {
         if (list = this.items[userId][type]) {
-          n = Math.floor(Math.random() * list.length);
-          return list[n];
+          return list[Math.floor(Math.random() * list.length)];
         } else {
           return logger.debug("[%s][%s] Session.getRandomUserItemIdOfType: user doesn't have a valid %s", site.site_id, userId, type);
         }

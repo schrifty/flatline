@@ -117,7 +117,7 @@
         }
       };
       sessionId = Session.getUserSessionId(site, userId);
-      return Spaces.process(site, userId, action, sessionId, parentId, eventHandlers);
+      return Spaces.process(site, userId, action, sessionId, resource, parentId, eventHandlers);
     };
 
     Action.readActions = function(oncomplete) {
