@@ -25,33 +25,47 @@
 
 # Test Composition
 [10] Create an activity
+
 [5] Create a blog in a group
+[3] Show a blog
 [1] Update a blog
 [1] Delete a blog
-[3] Get a blog
 [10] Create a blogpost
+[5] Show a blogpost
 [2] Update a blogpost
 [1] delete a blogpost
+
 [1] create a category
+[5] show a category
+
 [5] create a folder in a folder
+[10] show a folder
+[10] show a document
 [1] create a document in a folder # BEWARE - this costs money!
 [1] delete a document
+
 [5] create a forum in a group
+[10] show a forum
 [1] update a forum
 [1] delete a forum
-[10] create a discussion
+[5] create a discussion
+[10] show a discussion
 [2] update a discussion
 [1] delete a discussion
+
 [5] create a group in a category
 [5] create a group in a group
+[10] show a group
+
 [5] create an ideastorm in a group
+[10] show an ideastorm
 [2] update an ideastorm
-[10] create an idea
+[5] create an idea
+[10] show an idea
 [2] update an idea
 [1] delete an idea
 
 #
-##  ['ideastorm', 'show', 100],
 ##  ['ideastorm', 'show_idea', 200],
 ##  [10, 'Activity', 'show']
 ##    ['category', 'delete', 5],
