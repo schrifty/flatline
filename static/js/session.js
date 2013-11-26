@@ -114,7 +114,9 @@
       site.currentUsers += 1;
       site.users.push(user.id);
       this.items[user.id] = {};
-      this.registerPersonalDocLib(site, user.id);
+      if (user.email !== 'tech-support@moxiesoft.com') {
+        this.registerPersonalDocLib(site, user.id);
+      }
       return site;
     };
 
@@ -170,10 +172,13 @@
     };
 
     Session.getRandomUserItemIdOfType = function(site, userId, type) {
-      var list;
+      var list, n;
       if (this.items[userId]) {
         if (list = this.items[userId][type]) {
-          return list[Math.floor(Math.random() * list.length)];
+          n = Math.floor(Math.random() * list.length);
+          return list[n];
+        } else {
+          return logger.debug("[%s][%s] Session.getRandomUserItemIdOfType: user doesn't have a valid %s", site.site_id, userId, type);
         }
       } else {
         return logger.error("[%s][%s] Session.getRandomUserItemIdOfType: Couldn't find user session", site.site_id, userId);
@@ -195,6 +200,7 @@
       var sessionId;
       sessionId = this.getUserSessionId(site, userId);
       return Spaces.Folder.getPersonalDocLibId(site, userId, sessionId, (function(folderId) {
+        Spaces.logger.info("[%s][%s] Registering personal folder", site.site_id, userId);
         return Session.addItem(site, userId, 'folder', folderId);
       }));
     };

@@ -21,6 +21,7 @@ class Runner
   Spaces = require("spaces-client")
 
   @start: () ->
+    require('https').globalAgent.maxSockets = 200
     Action.init(() ->
       Runner.createNextSite()
     )
@@ -43,10 +44,12 @@ class Runner
 
       # if we successfully created the site, lets log tech-support in and seed the site with a little structure
       Runner.login(site, 'tech-support@moxiesoft.com', 'k3ithm00n', ((user, cookies) ->
-        site = Session.registerUser(site.site_id, user, cookies['_social_navigator_session'])
-        Action.seedSite(site, user.id, (() ->
-          Runner.createUser(site)
-        ))
+        logger.info("[%s][%s] Authed User [%s][%s][%s]", site.site_id, user.id, user.id, user.email, cookies['_social_navigator_session'])
+#        site = Session.registerUser(site.site_id, user, cookies['_social_navigator_session'])
+#        Action.seedSite(site, user.id, (() ->
+#          Runner.createUser(site)
+#        ))
+        Runner.createUser(site)
         if Session.siteCount() < MAX_SITES
           callback = -> Runner.createNextSite()
           setTimeout callback, (CREATE_PERIOD_MS_SITES / 2) + Math.floor(Math.random() * CREATE_PERIOD_MS_SITES)
@@ -67,7 +70,7 @@ class Runner
       }
     }
     Spaces.User.create(data, site.full_url, ((user) ->
-      logger.info("[%s][%s] Added User [%s]", site.site_id, user.id, email)
+      logger.info("[%s][%s] Created User [%s][%s]", site.site_id, user.id, user.id, user.email)
       Runner.login(site, email, password, ((user, cookies) ->
         site = Session.registerUser(site.site_id, user, cookies['_social_navigator_session'])
         Action.seedUser(site, user.id, (() ->
@@ -94,15 +97,13 @@ class Runner
     }
     Spaces.Site.login(data, site, ((resp, cookies) ->
       onsuccess(JSON.parse(resp), cookies)
-#      userId = resp.match(/"id":"(.*?)"/)[1]
-#      onsuccess(userId, cookies)
     ), ((msg) ->
       onfail(msg) if onfail
     ))
 
-  @startActivity: () ->
-    require("./action").doSomething()
-    callback = () -> Runner.startActivity()
+  @startActivity: (site, userId) ->
+    require("./action").doSomething(site, userId)
+    callback = () -> Runner.startActivity(site, userId)
     setTimeout callback, (REST_PERIOD / 2) + Math.floor(Math.random() * REST_PERIOD)
 
 module.exports = Runner

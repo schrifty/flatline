@@ -17,8 +17,11 @@
 [User] Create a group in a category
 [User] Create a group in a group
 [User] Create an ideastorm in a group
+[User] Create an idea in an ideastorm
 [User] Create a forum in a group
+[User] Create a discussion in a forum
 [User] Create a blog in a group
+[User] Create a blogpost in a blog
 
 # Test Composition
 [10] Create an activity
@@ -40,7 +43,7 @@
 [1] delete a discussion
 [5] create a group in a category
 [5] create a group in a group
-[10] create an ideastorm in a group
+[5] create an ideastorm in a group
 [2] update an ideastorm
 [10] create an idea
 [2] update an idea

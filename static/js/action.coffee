@@ -27,11 +27,8 @@ class Action
     else
       oncomplete() if oncomplete
 
-  @doSomething = () ->
-    action = Action.actions[Math.floor(Math.random() * Action.actions.length)]
-    site = Session.getRandomSite()
-    userId = site.users[Math.floor(Math.random() * site.users.length)]
-    Action.launch(site, userId, action, null)
+  @doSomething = (site, userId) ->
+    Action.launch(site, userId, Action.actions[Math.floor(Math.random() * Action.actions.length)], null)
 
   @launch = (site, userId, action, oncomplete) ->
     resource = null
@@ -56,18 +53,22 @@ class Action
 
         if action.parent
 #          if action.parent == 'category'
-#            resource = Session.getRandomSiteItemIdOfType(site, userId, action.parent)
+#            parentId = Session.getRandomSiteItemIdOfType(site, userId, action.parent)
 #          else
-          resource = Session.getRandomUserItemIdOfType(site, userId, action.parent)
-          unless resource
-            logger.info "[%s][%s] Resource not found - not launching activity. %s - %s in %s", site.site_id, userId, action.method, action.resource, action.parent
+          parentId = Session.getRandomUserItemIdOfType(site, userId, action.parent)
+          unless parentId
+            if action.method == 'create'
+              logger.error "[%s][%s] Resource not found - not launching activity. \"%s %s in %s\"", site.site_id, userId, action.method, action.resource, action.parent
+            else
+              logger.info "[%s][%s] Resource not found - not launching activity. \"%s %s in %s\"", site.site_id, userId, action.method, action.resource, action.parent
             return false
 
     eventHandlers = {
-      oncreate: (klass, id) ->
-        Session.addItem(site, userId, klass, id)
-      ondelete: (klass, id) ->
-        Session.removeItem(site, userId, klass, id)
+      oncreate: (id) ->
+        Session.addItem(site, userId, action.resource, id)
+      ondelete: () ->
+        logger.info "REMINDER: I don't think removeItem works right now!"
+        Session.removeItem(site, userId, action.resource, null)
       onsuccess: () ->
         Session.addActivity()
         oncomplete() if oncomplete
@@ -77,7 +78,7 @@ class Action
     }
 
     sessionId = Session.getUserSessionId(site, userId)
-    Spaces.process(site, userId, action, sessionId, resource, eventHandlers)
+    Spaces.process(site, userId, action, sessionId, parentId, eventHandlers)
 
   @readActions = (oncomplete) ->
     Spaces.logger.debug "Action.readActions: Loading actions file"

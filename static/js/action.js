@@ -48,16 +48,12 @@
       }
     };
 
-    Action.doSomething = function() {
-      var action, site, userId;
-      action = Action.actions[Math.floor(Math.random() * Action.actions.length)];
-      site = Session.getRandomSite();
-      userId = site.users[Math.floor(Math.random() * site.users.length)];
-      return Action.launch(site, userId, action, null);
+    Action.doSomething = function(site, userId) {
+      return Action.launch(site, userId, Action.actions[Math.floor(Math.random() * Action.actions.length)], null);
     };
 
     Action.launch = function(site, userId, action, oncomplete) {
-      var eventHandlers, resource, sessionId;
+      var eventHandlers, parentId, resource, sessionId;
       resource = null;
       switch (action.method) {
         case 'delete':
@@ -88,19 +84,24 @@
               action.parent = 'wiki';
           }
           if (action.parent) {
-            resource = Session.getRandomUserItemIdOfType(site, userId, action.parent);
-            if (!resource) {
-              logger.info("[%s][%s] Resource not found - not launching activity. %s - %s in %s", site.site_id, userId, action.method, action.resource, action.parent);
+            parentId = Session.getRandomUserItemIdOfType(site, userId, action.parent);
+            if (!parentId) {
+              if (action.method === 'create') {
+                logger.error("[%s][%s] Resource not found - not launching activity. \"%s %s in %s\"", site.site_id, userId, action.method, action.resource, action.parent);
+              } else {
+                logger.info("[%s][%s] Resource not found - not launching activity. \"%s %s in %s\"", site.site_id, userId, action.method, action.resource, action.parent);
+              }
               return false;
             }
           }
       }
       eventHandlers = {
-        oncreate: function(klass, id) {
-          return Session.addItem(site, userId, klass, id);
+        oncreate: function(id) {
+          return Session.addItem(site, userId, action.resource, id);
         },
-        ondelete: function(klass, id) {
-          return Session.removeItem(site, userId, klass, id);
+        ondelete: function() {
+          logger.info("REMINDER: I don't think removeItem works right now!");
+          return Session.removeItem(site, userId, action.resource, null);
         },
         onsuccess: function() {
           Session.addActivity();
@@ -116,7 +117,7 @@
         }
       };
       sessionId = Session.getUserSessionId(site, userId);
-      return Spaces.process(site, userId, action, sessionId, resource, eventHandlers);
+      return Spaces.process(site, userId, action, sessionId, parentId, eventHandlers);
     };
 
     Action.readActions = function(oncomplete) {

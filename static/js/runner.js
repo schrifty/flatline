@@ -24,6 +24,7 @@
     Spaces = require("spaces-client");
 
     Runner.start = function() {
+      require('https').globalAgent.maxSockets = 200;
       return Action.init(function() {
         return Runner.createNextSite();
       });
@@ -46,10 +47,8 @@
         site = Session.registerSite(site);
         return Runner.login(site, 'tech-support@moxiesoft.com', 'k3ithm00n', (function(user, cookies) {
           var callback;
-          site = Session.registerUser(site.site_id, user, cookies['_social_navigator_session']);
-          Action.seedSite(site, user.id, (function() {
-            return Runner.createUser(site);
-          }));
+          logger.info("[%s][%s] Authed User [%s][%s][%s]", site.site_id, user.id, user.id, user.email, cookies['_social_navigator_session']);
+          Runner.createUser(site);
           if (Session.siteCount() < MAX_SITES) {
             callback = function() {
               return Runner.createNextSite();
@@ -76,7 +75,7 @@
       };
       return Spaces.User.create(data, site.full_url, (function(user) {
         var callback;
-        logger.info("[%s][%s] Added User [%s]", site.site_id, user.id, email);
+        logger.info("[%s][%s] Created User [%s][%s]", site.site_id, user.id, user.id, user.email);
         Runner.login(site, email, password, (function(user, cookies) {
           site = Session.registerUser(site.site_id, user, cookies['_social_navigator_session']);
           return Action.seedUser(site, user.id, (function() {
@@ -115,11 +114,11 @@
       }));
     };
 
-    Runner.startActivity = function() {
+    Runner.startActivity = function(site, userId) {
       var callback;
-      require("./action").doSomething();
+      require("./action").doSomething(site, userId);
       callback = function() {
-        return Runner.startActivity();
+        return Runner.startActivity(site, userId);
       };
       return setTimeout(callback, (REST_PERIOD / 2) + Math.floor(Math.random() * REST_PERIOD));
     };

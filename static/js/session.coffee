@@ -108,7 +108,7 @@ class Session
     site.users.push user.id
 
     this.items[user.id] = {}
-    this.registerPersonalDocLib(site, user.id)
+    this.registerPersonalDocLib(site, user.id) unless user.email == 'tech-support@moxiesoft.com'
 
     return site
 
@@ -157,9 +157,11 @@ class Session
   @getRandomUserItemIdOfType = (site, userId, type) ->
     if @items[userId]
       if list = @items[userId][type]
-        return list[Math.floor(Math.random() * list.length)]
-#      else
-#        logger.debug("[%s][%s] Session.getRandomUserItemIdOfType: user doesn't have a valid %s", site.site_id, userId, type)
+        n = Math.floor(Math.random() * list.length)
+#        logger.debug("[%s][%s] Session.getRandomUserItemIdOfType: um what %s", site.site_id, userId, JSON.stringify(list[n]))
+        return list[n]
+      else
+        logger.debug("[%s][%s] Session.getRandomUserItemIdOfType: user doesn't have a valid %s", site.site_id, userId, type)
     else
       logger.error("[%s][%s] Session.getRandomUserItemIdOfType: Couldn't find user session", site.site_id, userId)
 
@@ -175,6 +177,7 @@ class Session
   @registerPersonalDocLib = (site, userId) ->
     sessionId = this.getUserSessionId(site, userId)
     Spaces.Folder.getPersonalDocLibId(site, userId, sessionId, ((folderId) ->
+      Spaces.logger.info("[%s][%s] Registering personal folder", site.site_id, userId)
       Session.addItem(site, userId, 'folder', folderId)
     ))
 
