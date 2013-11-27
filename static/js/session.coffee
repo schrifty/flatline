@@ -8,6 +8,8 @@
 # - saves the user in a local array
 ## registers items
 
+CALLBACK_SECS = 8
+
 class Session
   Spaces = require('spaces-client')
   logger = require('./logger')
@@ -16,6 +18,8 @@ class Session
 
   @activityCount = 0
   @errorCount = 0
+  @appServerCount = 0
+  @jobServerCount = 0
 
   @startEmitter = () ->
     Session.emit(0, 0)
@@ -31,7 +35,7 @@ class Session
         userCount: @totalActiveUsers,
         itemCount: @itemCount,
         activityCount: activityCount,
-        activityRate: activityRate,
+        activityRate: activityRate.to_f / CALLBACK_SECS.to_f,
         errorCount: errorCount,
         errorRate: errorRate,
         appServerCount: @appServerCount,
@@ -39,7 +43,7 @@ class Session
       }}
 
     callback = () -> Session.emit(activityCount, errorCount)
-    setTimeout callback, 5000
+    setTimeout callback, (CALLBACK_SECS * 1000)
 
   Session.startEmitter()
 
@@ -76,17 +80,15 @@ class Session
 
   # SERVERS
 
-  @appServerCount = 0
-  @jobServerCount = 0
-
   @startPoller = () ->
     Session.poll()
 
-  @poll = () ->
-    if this.sites[0]
-      Spaces.Pod.getPods(@sites[0], ((appServerCount, jobServerCount) ->
-        @appServerCount = appServerCount
-        @jobServerCount = jobServerCount
+  @poll = () =>
+    if site = Session.getRandomSite()
+      Spaces.Pod.getServers(site, ((appServerCount, jobServerCount) =>
+        this.appServerCount = appServerCount
+        this.jobServerCount = jobServerCount
+        logger.info "COuntS %d/%d", this.appServerCount, this.jobServerCount
       ))
 
     callback = -> Session.poll()

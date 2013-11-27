@@ -41,6 +41,9 @@ $(document).ready ->
 Flatline.start = () ->
   $('#rate-chart').highcharts({
     chart: {
+      backgroundColor: '#FCFFC5',
+      borderWidth: 3,
+      margin: [0, 0, 15, 0],
       type: 'line'
     },
     title: {
@@ -50,12 +53,14 @@ Flatline.start = () ->
       type: 'datetime'
     },
     yAxis: [{
+      min: 0,
       title: {
         id: 'rate-axis',
-        text: 'Rate'
+        text: 'Transactions per Second'
       }
     }, {
       opposite: true,
+      min: 0,
       title: {
         id: 'server-axis',
         text: 'Server Count'
@@ -91,6 +96,9 @@ Flatline.start = () ->
 
   $('#activity-chart').highcharts({
     chart: {
+      margin: [15, 0, 0, 0],
+      borderWidth: 3,
+      backgroundColor: '#FCFFC5',
       type: 'line'
     },
     title: {
@@ -100,11 +108,13 @@ Flatline.start = () ->
       type: 'datetime'
     },
     yAxis: [{
+      min: 0,
       title: {
         id: 'activity-axis',
-        text: 'Activities'
+        text: 'Activity Count'
       }
     }, {
+      min: 0,
       opposite: true,
       title: {
         id: 'site-axis',
