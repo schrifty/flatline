@@ -12,6 +12,7 @@ CALLBACK_SECS = 8
 
 class Session
   Spaces = require('spaces-client')
+  Runner = require('./runner')
   logger = require('./logger')
 
   # Emitter
@@ -20,6 +21,7 @@ class Session
   @errorCount = 0
   @appServerCount = 0
   @jobServerCount = 0
+  @runningAvg = 0
 
   @startEmitter = () ->
     Session.emit(0, 0)
@@ -28,18 +30,29 @@ class Session
     if Spaces.socket
       activityCount = @activityCount
       errorCount = @errorCount
-      activityRate = @activityCount - lastActivityCount
-      errorRate = @errorCount - lastErrorCount
+      activityRate = (@activityCount - lastActivityCount) / (CALLBACK_SECS * @appServerCount)
+      errorRate = (@errorCount - lastErrorCount) / (CALLBACK_SECS * @appServerCount)
+      queueDepth = Object.keys(require('https').globalAgent.requests).length
+
+      socketsInUse = 0
+      for socket in require('https').globalAgent.sockets
+        if socketList.hasOwnProperty(socket)
+          socketsInUse += socketList[socket].length
+
+      if queueDepth > 0
+        logger.warn("Max Sockets: [%d]  Queue Depth: [%d]  Socket Depth: [%d]", require('https').globalAgent.maxSockets, queueDepth, socketDepth)
       Spaces.socket.emit "stats", { ts: new Date().getTime(), stats: {
         siteCount: @totalSites,
         userCount: @totalActiveUsers,
         itemCount: @itemCount,
         activityCount: activityCount,
-        activityRate: activityRate.to_f / CALLBACK_SECS.to_f,
+        activityRate: activityRate,
         errorCount: errorCount,
         errorRate: errorRate,
         appServerCount: @appServerCount,
-        jobServerCount: @jobServerCount
+        jobServerCount: @jobServerCount,
+        socketsInUse: socketsInUse,
+        runningAvg: @runningAvg
       }}
 
     callback = () -> Session.emit(activityCount, errorCount)
@@ -54,12 +67,13 @@ class Session
   @siteArray = []
 
   @registerSite = (site) ->
+
     site.users = []
-    site.signupPeriod = 8000
+    site.signupPeriod = Runner.USER_SIGNUP_INTERVAL_MS
     site.currentUsers = 0
     site.maxUsers = 50000
     # TODO uncomment the above and randomize these runtime characteristics
-    #    site.signupPeriod = 20000 + Math.floor(Math.Random() * 100000) # 20 - 120 seconds
+    #    site.signupPeriod = ( Runner.USER_SIGNUP_INTERVAL_MS / 2) + Math.floor(Math.Random() * Runner.USER_SIGNUP_INTERVAL_MS) # 10-30 seconds
     #    site.maxUsers = 10 + Math.floor(Math.Random() * 49990) # 10-50000 users
 
     this.items[site.site_id] = {}
@@ -88,7 +102,6 @@ class Session
       Spaces.Pod.getServers(site, ((appServerCount, jobServerCount) =>
         this.appServerCount = appServerCount
         this.jobServerCount = jobServerCount
-        logger.info "COuntS %d/%d", this.appServerCount, this.jobServerCount
       ))
 
     callback = -> Session.poll()
@@ -140,7 +153,7 @@ class Session
   @items = {}
 
   @addItem = (site, userId, type, item) ->
-    logger.debug("[%s][%s] Session.addItem: Added a %s [%s]", site.site_id, userId, type, item)
+    logger.info("[%s][%s] Session.addItem: Added a %s [%s]", site.site_id, userId, type, item)
     @itemCount += 1
 
     if @items[userId]
@@ -156,12 +169,16 @@ class Session
     else
       logger.error("[%s][%s] Session.addItem: site items not found", site.site_id, userId)
 
+  @removeItem = (site, userId, type, item) ->
+    logger.info("[%s][%s] Session.removeItem: Removed a %s [%s]", site.site_id, userId, type, item)
+    logger.warn "REMINDER: removeItem isn't implemented yet"
+
   @getRandomUserItemIdOfType = (site, userId, type) ->
     if @items[userId]
       if list = @items[userId][type]
         return list[Math.floor(Math.random() * list.length)]
       else
-        logger.debug("[%s][%s] Session.getRandomUserItemIdOfType: user doesn't have a valid %s", site.site_id, userId, type)
+        logger.error("[%s][%s] Session.getRandomUserItemIdOfType: user doesn't have a valid %s", site.site_id, userId, type)
     else
       logger.error("[%s][%s] Session.getRandomUserItemIdOfType: Couldn't find user session", site.site_id, userId)
 
@@ -169,27 +186,41 @@ class Session
     if @items[site.site_id]
       if list = @items[site.site_id][type]
         return list[Math.floor(Math.random() * list.length)]
-#      else
-#        logger.debug("[%s][%s] Session.getRandomSiteItemIdOfType: site doesn't have a valid %s", site.site_id, userId, type)
+      else
+        logger.error("[%s][%s] Session.getRandomSiteItemIdOfType: site doesn't have a valid %s", site.site_id, userId, type)
     else
       logger.error("[%s][%s] Session.getRandomSiteItemIdOfType: Couldn't find site session", site.site_id, userId)
 
   @registerPersonalDocLib = (site, userId) ->
     sessionId = this.getUserSessionId(site, userId)
     Spaces.Folder.getPersonalDocLibId(site, userId, sessionId, ((folderId) ->
-      Spaces.logger.info("[%s][%s] Registering personal folder", site.site_id, userId)
       Session.addItem(site, userId, 'folder', folderId)
     ))
 
   # ACTIVITIES
 
-  @addActivity = () ->
+  @times = []
+  @runningAvgTotal = 0
+
+  @profile = (msecs) ->
+    @times.push(msecs)
+    @runningAvgTotal += msecs
+    if @times.length > 100
+      n = @times[0]
+      @times = @times.slice(1)
+      @runningAvgTotal -= n
+    @runningAvg = (@runningAvgTotal / (1000 * @times.length))
+
+  @addActivity = (msecs) ->
     @activityCount += 1
+    @profile(msecs) if msecs
 
   # ERRORS
 
-  @addError = () ->
+  @addError = (msecs) ->
     @errorCount += 1
+    @profile(msecs) if msecs
+
 
 module.exports = exports = Session
 

@@ -16,57 +16,71 @@
 [User] Create a group in a category
 [User] Create a group in a category
 [User] Create a group in a group
+[User] Create a document in a folder
 [User] Create an ideastorm in a group
 [User] Create an idea in an ideastorm
 [User] Create a forum in a group
 [User] Create a discussion in a forum
 [User] Create a blog in a group
 [User] Create a blogpost in a blog
+[User] Create a wiki in a group
+[User] Create a wikipage in a wiki
+[User] Create an activity
 
 # Test Composition
 [10] Create an activity
+[10] Show an activity
 
 [5] Create a blog in a group
-[3] Show a blog
+[25] Show a blog
 [1] Update a blog
 [1] Delete a blog
 [10] Create a blogpost
-[5] Show a blogpost
+[50] Show a blogpost
 [2] Update a blogpost
 [1] delete a blogpost
 
 [1] create a category
-[5] show a category
+[25] show a category
 
 [5] create a folder in a folder
-[10] show a folder
-[10] show a document
+[25] show a folder
 [1] create a document in a folder # BEWARE - this costs money!
-[1] delete a document
+[100] show a document
+# [1] delete a document
+# [1] update a document
 
-[5] create a forum in a group
-[10] show a forum
+[3] create a forum in a group
+[25] show a forum
 [1] update a forum
 [1] delete a forum
 [5] create a discussion
-[10] show a discussion
+[50] show a discussion
 [2] update a discussion
 [1] delete a discussion
 
-[5] create a group in a category
-[5] create a group in a group
-[10] show a group
+[3] create a group in a category
+[3] create a group in a group
+[25] show a group
 
-[5] create an ideastorm in a group
-[10] show an ideastorm
+[3] create an ideastorm in a group
+[25] show an ideastorm
 [2] update an ideastorm
+[1] delete an ideastorm
 [5] create an idea
-[10] show an idea
+[50] show an idea
 [2] update an idea
 [1] delete an idea
 
-#
-##  ['ideastorm', 'show_idea', 200],
+[5] Create a wiki in a group
+[25] Show a wiki
+[1] Update a wiki
+[1] Delete a wiki
+[10] Create a wikipage
+[50] Show a wikipage
+[2] Update a wikipage
+[1] delete a wikipage
+
 ##  [10, 'Activity', 'show']
 ##    ['category', 'delete', 5],
 ##    ['category', 'update', 5],

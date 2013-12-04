@@ -28,7 +28,18 @@ class Action
       oncomplete() if oncomplete
 
   @doSomething = (site, userId) ->
-    Action.launch(site, userId, Action.actions[Math.floor(Math.random() * Action.actions.length)], null)
+    target = Math.floor(Math.random() * Action.actionIndex[Action.actionIndex.length - 1])
+    for i in [0..Action.actionIndex.length] by 1
+      if target < Action.actionIndex[i]
+        action = Action.actions[i]
+        break
+#    logger.info "[%s][%s] ABOUT TO: %s %s in %s", site.site_id, userId, action.method, action.resource, action.parent
+    Action.launch(site, userId, action, (() ->
+      if action.parent
+        logger.info "[%s][%s] SUCCESS: %s %s in %s", site.site_id, userId, action.method, action.resource, action.parent
+      else
+        logger.info "[%s][%s] SUCCESS: %s %s", site.site_id, userId, action.method, action.resource
+    ))
 
   @launch = (site, userId, action, oncomplete) ->
     resource = null
@@ -67,13 +78,12 @@ class Action
       oncreate: (id) ->
         Session.addItem(site, userId, action.resource, id)
       ondelete: () ->
-        logger.info "REMINDER: I don't think removeItem works right now!"
         Session.removeItem(site, userId, action.resource, null)
-      onsuccess: () ->
-        Session.addActivity()
+      onsuccess: (msecs) ->
+        Session.addActivity(msecs)
         oncomplete() if oncomplete
-      onfail: () ->
-        Session.addError()
+      onfail: (msecs) ->
+        Session.addError(msecs)
         oncomplete() if oncomplete
     }
 
@@ -86,7 +96,9 @@ class Action
     fs = require('fs')
     readline = require('readline')
 
+    lastIndex = 0
     Action.actions = []
+    Action.actionIndex = []
     readline.createInterface({
       input: fs.createReadStream('./actions'),
       output: process.stdout,
@@ -123,6 +135,8 @@ class Action
           Action.userSeeds.push action
         else
           Action.actions.push action
+          lastIndex += action.weight
+          Action.actionIndex.push lastIndex
       catch e
         logger.error("Syntax Error in actions config: %s", line)
         throw e

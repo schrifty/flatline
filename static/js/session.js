@@ -5,12 +5,14 @@
   CALLBACK_SECS = 8;
 
   Session = (function() {
-    var Spaces, logger,
+    var Runner, Spaces, logger,
       _this = this;
 
     function Session() {}
 
     Spaces = require('spaces-client');
+
+    Runner = require('./runner');
 
     logger = require('./logger');
 
@@ -22,17 +24,31 @@
 
     Session.jobServerCount = 0;
 
+    Session.runningAvg = 0;
+
     Session.startEmitter = function() {
       return Session.emit(0, 0);
     };
 
     Session.emit = function(lastActivityCount, lastErrorCount) {
-      var activityCount, activityRate, callback, errorCount, errorRate;
+      var activityCount, activityRate, callback, errorCount, errorRate, queueDepth, socket, socketsInUse, _i, _len, _ref;
       if (Spaces.socket) {
         activityCount = this.activityCount;
         errorCount = this.errorCount;
-        activityRate = this.activityCount - lastActivityCount;
-        errorRate = this.errorCount - lastErrorCount;
+        activityRate = (this.activityCount - lastActivityCount) / (CALLBACK_SECS * this.appServerCount);
+        errorRate = (this.errorCount - lastErrorCount) / (CALLBACK_SECS * this.appServerCount);
+        queueDepth = Object.keys(require('https').globalAgent.requests).length;
+        socketsInUse = 0;
+        _ref = require('https').globalAgent.sockets;
+        for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+          socket = _ref[_i];
+          if (socketList.hasOwnProperty(socket)) {
+            socketsInUse += socketList[socket].length;
+          }
+        }
+        if (queueDepth > 0) {
+          logger.warn("Max Sockets: [%d]  Queue Depth: [%d]  Socket Depth: [%d]", require('https').globalAgent.maxSockets, queueDepth, socketDepth);
+        }
         Spaces.socket.emit("stats", {
           ts: new Date().getTime(),
           stats: {
@@ -40,11 +56,13 @@
             userCount: this.totalActiveUsers,
             itemCount: this.itemCount,
             activityCount: activityCount,
-            activityRate: activityRate.to_f / CALLBACK_SECS.to_f,
+            activityRate: activityRate,
             errorCount: errorCount,
             errorRate: errorRate,
             appServerCount: this.appServerCount,
-            jobServerCount: this.jobServerCount
+            jobServerCount: this.jobServerCount,
+            socketsInUse: socketsInUse,
+            runningAvg: this.runningAvg
           }
         });
       }
@@ -64,7 +82,7 @@
 
     Session.registerSite = function(site) {
       site.users = [];
-      site.signupPeriod = 8000;
+      site.signupPeriod = Runner.USER_SIGNUP_INTERVAL_MS;
       site.currentUsers = 0;
       site.maxUsers = 50000;
       this.items[site.site_id] = {};
@@ -95,8 +113,7 @@
       if (site = Session.getRandomSite()) {
         Spaces.Pod.getServers(site, (function(appServerCount, jobServerCount) {
           Session.appServerCount = appServerCount;
-          Session.jobServerCount = jobServerCount;
-          return logger.info("COuntS %d/%d", Session.appServerCount, Session.jobServerCount);
+          return Session.jobServerCount = jobServerCount;
         }));
       }
       callback = function() {
@@ -155,7 +172,7 @@
     Session.items = {};
 
     Session.addItem = function(site, userId, type, item) {
-      logger.debug("[%s][%s] Session.addItem: Added a %s [%s]", site.site_id, userId, type, item);
+      logger.info("[%s][%s] Session.addItem: Added a %s [%s]", site.site_id, userId, type, item);
       this.itemCount += 1;
       if (this.items[userId]) {
         if (!this.items[userId][type]) {
@@ -175,13 +192,18 @@
       }
     };
 
+    Session.removeItem = function(site, userId, type, item) {
+      logger.info("[%s][%s] Session.removeItem: Removed a %s [%s]", site.site_id, userId, type, item);
+      return logger.warn("REMINDER: removeItem isn't implemented yet");
+    };
+
     Session.getRandomUserItemIdOfType = function(site, userId, type) {
       var list;
       if (this.items[userId]) {
         if (list = this.items[userId][type]) {
           return list[Math.floor(Math.random() * list.length)];
         } else {
-          return logger.debug("[%s][%s] Session.getRandomUserItemIdOfType: user doesn't have a valid %s", site.site_id, userId, type);
+          return logger.error("[%s][%s] Session.getRandomUserItemIdOfType: user doesn't have a valid %s", site.site_id, userId, type);
         }
       } else {
         return logger.error("[%s][%s] Session.getRandomUserItemIdOfType: Couldn't find user session", site.site_id, userId);
@@ -193,6 +215,8 @@
       if (this.items[site.site_id]) {
         if (list = this.items[site.site_id][type]) {
           return list[Math.floor(Math.random() * list.length)];
+        } else {
+          return logger.error("[%s][%s] Session.getRandomSiteItemIdOfType: site doesn't have a valid %s", site.site_id, userId, type);
         }
       } else {
         return logger.error("[%s][%s] Session.getRandomSiteItemIdOfType: Couldn't find site session", site.site_id, userId);
@@ -203,17 +227,38 @@
       var sessionId;
       sessionId = this.getUserSessionId(site, userId);
       return Spaces.Folder.getPersonalDocLibId(site, userId, sessionId, (function(folderId) {
-        Spaces.logger.info("[%s][%s] Registering personal folder", site.site_id, userId);
         return Session.addItem(site, userId, 'folder', folderId);
       }));
     };
 
-    Session.addActivity = function() {
-      return this.activityCount += 1;
+    Session.times = [];
+
+    Session.runningAvgTotal = 0;
+
+    Session.profile = function(msecs) {
+      var n;
+      this.times.push(msecs);
+      this.runningAvgTotal += msecs;
+      if (this.times.length > 100) {
+        n = this.times[0];
+        this.times = this.times.slice(1);
+        this.runningAvgTotal -= n;
+      }
+      return this.runningAvg = this.runningAvgTotal / (1000 * this.times.length);
     };
 
-    Session.addError = function() {
-      return this.errorCount += 1;
+    Session.addActivity = function(msecs) {
+      this.activityCount += 1;
+      if (msecs) {
+        return this.profile(msecs);
+      }
+    };
+
+    Session.addError = function(msecs) {
+      this.errorCount += 1;
+      if (msecs) {
+        return this.profile(msecs);
+      }
     };
 
     return Session;

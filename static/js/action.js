@@ -49,7 +49,21 @@
     };
 
     Action.doSomething = function(site, userId) {
-      return Action.launch(site, userId, Action.actions[Math.floor(Math.random() * Action.actions.length)], null);
+      var action, i, target, _i, _ref;
+      target = Math.floor(Math.random() * Action.actionIndex[Action.actionIndex.length - 1]);
+      for (i = _i = 0, _ref = Action.actionIndex.length; _i <= _ref; i = _i += 1) {
+        if (target < Action.actionIndex[i]) {
+          action = Action.actions[i];
+          break;
+        }
+      }
+      return Action.launch(site, userId, action, (function() {
+        if (action.parent) {
+          return logger.info("[%s][%s] SUCCESS: %s %s in %s", site.site_id, userId, action.method, action.resource, action.parent);
+        } else {
+          return logger.info("[%s][%s] SUCCESS: %s %s", site.site_id, userId, action.method, action.resource);
+        }
+      }));
     };
 
     Action.launch = function(site, userId, action, oncomplete) {
@@ -100,17 +114,16 @@
           return Session.addItem(site, userId, action.resource, id);
         },
         ondelete: function() {
-          logger.info("REMINDER: I don't think removeItem works right now!");
           return Session.removeItem(site, userId, action.resource, null);
         },
-        onsuccess: function() {
-          Session.addActivity();
+        onsuccess: function(msecs) {
+          Session.addActivity(msecs);
           if (oncomplete) {
             return oncomplete();
           }
         },
-        onfail: function() {
-          Session.addError();
+        onfail: function(msecs) {
+          Session.addError(msecs);
           if (oncomplete) {
             return oncomplete();
           }
@@ -121,11 +134,13 @@
     };
 
     Action.readActions = function(oncomplete) {
-      var fs, readline;
+      var fs, lastIndex, readline;
       Spaces.logger.debug("Action.readActions: Loading actions file");
       fs = require('fs');
       readline = require('readline');
+      lastIndex = 0;
       Action.actions = [];
+      Action.actionIndex = [];
       return readline.createInterface({
         input: fs.createReadStream('./actions'),
         output: process.stdout,
@@ -167,7 +182,9 @@
           } else if (seedUser) {
             return Action.userSeeds.push(action);
           } else {
-            return Action.actions.push(action);
+            Action.actions.push(action);
+            lastIndex += action.weight;
+            return Action.actionIndex.push(lastIndex);
           }
         } catch (_error) {
           e = _error;

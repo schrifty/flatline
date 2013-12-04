@@ -25,6 +25,7 @@ $(document).ready ->
       rateChart.get('job-server-count').addPoint([ data.ts, data.stats.jobServerCount], true)
       rateChart.get('activity-rate').addPoint([ data.ts, data.stats.activityRate], true)
       rateChart.get('error-rate').addPoint([ data.ts, data.stats.errorRate], true)
+      rateChart.get('sockets-in-use').addPoint([ data.ts, data.stats.socketsInUse], true)
 
     # Activity Chart
     #   Users & Activities (axis 1)
@@ -34,6 +35,7 @@ $(document).ready ->
       activityChart.get('site-count').addPoint([ data.ts, data.stats.siteCount], true)
       activityChart.get('user-count').addPoint([ data.ts, data.stats.userCount], true)
       activityChart.get('activity-count').addPoint([ data.ts, data.stats.activityCount], true)
+      activityChart.get('running-avg').addPoint([ data.ts, data.stats.runningAvg], true)
 
   $('#sender').on 'click', (event) ->
     Flatline.start()
@@ -43,11 +45,10 @@ Flatline.start = () ->
     chart: {
       backgroundColor: '#FCFFC5',
       borderWidth: 3,
-      margin: [0, 0, 15, 0],
       type: 'line'
     },
     title: {
-      text: 'Activity Rate v. Servers'
+      text: 'Scaling Effectiveness'
     },
     xAxis: {
       type: 'datetime'
@@ -56,7 +57,7 @@ Flatline.start = () ->
       min: 0,
       title: {
         id: 'rate-axis',
-        text: 'Transactions per Second'
+        text: 'Transactions/sec/server'
       }
     }, {
       opposite: true,
@@ -69,15 +70,20 @@ Flatline.start = () ->
     series: [{
       data: [],
       id: 'activity-rate',
-      name: 'Activity Rate'
+      name: 'Activity per Server'
     }, {
       data: [],
       id: 'error-rate',
-      name: 'Error Rate'
+      name: 'Errors per Server'
     }, {
       data: [],
       id: 'app-server-count',
       name: 'App Servers',
+      yAxis: 1
+    }, {
+      data: [],
+      id: 'sockets-in-use',
+      name: 'Sockets-in-use',
       yAxis: 1
     }, {
       data: [],
@@ -96,13 +102,12 @@ Flatline.start = () ->
 
   $('#activity-chart').highcharts({
     chart: {
-      margin: [15, 0, 0, 0],
       borderWidth: 3,
       backgroundColor: '#FCFFC5',
       type: 'line'
     },
     title: {
-      text: 'Activity v. Sites'
+      text: 'Activity v. Response Time'
     },
     xAxis: {
       type: 'datetime'
@@ -117,8 +122,8 @@ Flatline.start = () ->
       min: 0,
       opposite: true,
       title: {
-        id: 'site-axis',
-        text: 'Sites'
+        id: 'response-time-axis',
+        text: 'Response Times'
       }
     }],
     series: [{
@@ -132,7 +137,11 @@ Flatline.start = () ->
     }, {
       data: [],
       id: 'site-count',
-      name: 'Site Count',
+      name: 'Site Count'
+    }, {
+      data: [],
+      id: 'running-avg',
+      name: 'Running Average Response',
       yAxis: 1
     }],
     plotOptions: {
