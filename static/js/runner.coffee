@@ -12,7 +12,6 @@
 MAX_SITES = 20
 MAX_SOCKETS = 500
 SITE_INTERVAL_MS = 100000
-USER_SIGNUP_INTERVAL_MS = 20000
 REST_PERIOD_MS = 10000
 
 class Runner
@@ -24,9 +23,20 @@ class Runner
 
   @start: () ->
     require('https').globalAgent.maxSockets = MAX_SOCKETS
+    Runner.diagInfo()
     Action.init(() ->
       Runner.createNextSite()
     )
+
+  @diagInfo: () ->
+    maxSockets = require('https').globalAgent.maxSockets
+    queueDepth = Object.keys(require('https').globalAgent.requests).length
+    socketDepth = Object.keys(require('https').globalAgent.sockets).length
+    logger.info("********** Max Sockets: [%d]  Queue Depth: [%d]  Socket Depth: [%d]", maxSockets, queueDepth, socketDepth)
+
+    callback = -> Runner.diagInfo()
+    setTimeout callback, 1000
+
 
   @createNextSite: () ->
     siteId = "xx" + Faker.Internet.domainWord()
