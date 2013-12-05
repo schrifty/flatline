@@ -67,13 +67,13 @@
     };
 
     Action.launch = function(site, userId, action, oncomplete) {
-      var eventHandlers, parentId, resource, sessionId;
-      resource = null;
+      var eventHandlers, parentId, resourceId, sessionId;
+      resourceId = null;
       switch (action.method) {
         case 'delete':
         case 'update':
         case 'show':
-          if (!(resource = Session.getRandomUserItemIdOfType(site, userId, action.resource))) {
+          if (!(resourceId = Session.getRandomUserItemIdOfType(site, userId, action.resource))) {
             logger.info("[%s][%s] Resource not found, so aborting, resource[%s] - method[%s]", site.site_id, userId, action.resource, action.method);
             return false;
           }
@@ -117,20 +117,20 @@
           return Session.removeItem(site, userId, action.resource, null);
         },
         onsuccess: function(msecs) {
-          Session.addActivity(msecs);
+          Session.addActivity(action, msecs);
           if (oncomplete) {
             return oncomplete();
           }
         },
         onfail: function(msecs) {
-          Session.addError(msecs);
+          Session.addError(action, msecs);
           if (oncomplete) {
             return oncomplete();
           }
         }
       };
       sessionId = Session.getUserSessionId(site, userId);
-      return Spaces.process(site, userId, action, sessionId, resource, parentId, eventHandlers);
+      return Spaces.process(site, userId, action, sessionId, resourceId, parentId, eventHandlers);
     };
 
     Action.readActions = function(oncomplete) {

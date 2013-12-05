@@ -26,29 +26,19 @@
 
     Session.runningAvg = 0;
 
+    Session.runningAvgByType = {};
+
     Session.startEmitter = function() {
       return Session.emit(0, 0);
     };
 
     Session.emit = function(lastActivityCount, lastErrorCount) {
-      var activityCount, activityRate, callback, errorCount, errorRate, queueDepth, socket, socketsInUse, _i, _len, _ref;
+      var activityCount, activityRate, callback, errorCount, errorRate;
       if (Spaces.socket) {
         activityCount = this.activityCount;
         errorCount = this.errorCount;
         activityRate = (this.activityCount - lastActivityCount) / (CALLBACK_SECS * this.appServerCount);
         errorRate = (this.errorCount - lastErrorCount) / (CALLBACK_SECS * this.appServerCount);
-        queueDepth = Object.keys(require('https').globalAgent.requests).length;
-        socketsInUse = 0;
-        _ref = require('https').globalAgent.sockets;
-        for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-          socket = _ref[_i];
-          if (socketList.hasOwnProperty(socket)) {
-            socketsInUse += socketList[socket].length;
-          }
-        }
-        if (queueDepth > 0) {
-          logger.warn("Max Sockets: [%d]  Queue Depth: [%d]  Socket Depth: [%d]", require('https').globalAgent.maxSockets, queueDepth, socketDepth);
-        }
         Spaces.socket.emit("stats", {
           ts: new Date().getTime(),
           stats: {
@@ -61,8 +51,8 @@
             errorRate: errorRate,
             appServerCount: this.appServerCount,
             jobServerCount: this.jobServerCount,
-            socketsInUse: socketsInUse,
-            runningAvg: this.runningAvg
+            runningAvg: this.runningAvg,
+            runningAvgByType: this.runningAvgByType
           }
         });
       }
@@ -82,7 +72,7 @@
 
     Session.registerSite = function(site) {
       site.users = [];
-      site.signupPeriod = Runner.USER_SIGNUP_INTERVAL_MS;
+      site.signupPeriod = 20000;
       site.currentUsers = 0;
       site.maxUsers = 50000;
       this.items[site.site_id] = {};
@@ -172,7 +162,7 @@
     Session.items = {};
 
     Session.addItem = function(site, userId, type, item) {
-      logger.info("[%s][%s] Session.addItem: Added a %s [%s]", site.site_id, userId, type, item);
+      logger.debug("[%s][%s] Session.addItem: Added a %s [%s]", site.site_id, userId, type, item);
       this.itemCount += 1;
       if (this.items[userId]) {
         if (!this.items[userId][type]) {
@@ -235,7 +225,11 @@
 
     Session.runningAvgTotal = 0;
 
-    Session.profile = function(msecs) {
+    Session.timesByType = [];
+
+    Session.timesByTypeTotal = [];
+
+    Session.profile = function(action, msecs) {
       var n;
       this.times.push(msecs);
       this.runningAvgTotal += msecs;
@@ -244,20 +238,34 @@
         this.times = this.times.slice(1);
         this.runningAvgTotal -= n;
       }
-      return this.runningAvg = this.runningAvgTotal / (1000 * this.times.length);
-    };
-
-    Session.addActivity = function(msecs) {
-      this.activityCount += 1;
-      if (msecs) {
-        return this.profile(msecs);
+      this.runningAvg = this.runningAvgTotal / (1000 * this.times.length);
+      if (action.method === 'show') {
+        if (!this.timesByType[action.resource]) {
+          this.timesByType[action.resource] = [];
+          this.timesByTypeTotal[action.resource] = 0;
+        }
+        this.timesByType[action.resource].push(msecs);
+        this.timesByTypeTotal[action.resource] += msecs;
+        if (this.timesByType[action.resource].length > 10) {
+          n = this.timesByType[action.resource][0];
+          this.timesByType[action.resource] = this.timesByType[action.resource].slice(1);
+          this.timesByTypeTotal[action.resource] -= n;
+        }
+        return this.runningAvgByType[action.resource] = this.timesByTypeTotal[action.resource] / (1000 * this.timesByType[action.resource].length);
       }
     };
 
-    Session.addError = function(msecs) {
+    Session.addActivity = function(action, msecs) {
+      this.activityCount += 1;
+      if (msecs) {
+        return this.profile(action, msecs);
+      }
+    };
+
+    Session.addError = function(action, msecs) {
       this.errorCount += 1;
       if (msecs) {
-        return this.profile(msecs);
+        return this.profile(action, msecs);
       }
     };
 

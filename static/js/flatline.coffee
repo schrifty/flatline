@@ -2,13 +2,6 @@ window.Flatline ||= {}
 
 $(document).ready ->
 
-  # Sites: 1-5000
-  # Users: 1-100000
-  # Activities: 1-1M
-  # Activity Rate: 1-1000?
-  # Error Rate: 1-10000?
-
-
   # We get one message from the server every 10 seconds or so
   @started = false
   io.connect().on "stats", (data) ->
@@ -27,9 +20,22 @@ $(document).ready ->
       rateChart.get('error-rate').addPoint([ data.ts, data.stats.errorRate], true)
       rateChart.get('sockets-in-use').addPoint([ data.ts, data.stats.socketsInUse], true)
 
-    # Activity Chart
-    #   Users & Activities (axis 1)
-    #   Site Count (axis 2)
+      # Action Chart
+
+      actionChart = $('#action-chart').highcharts()
+      for series in Object.keys(data.stats.runningAvgByType)
+        unless actionChart.get(series)
+          actionChart.addSeries({
+            data: [],
+            id: series,
+            name: series,
+            visible: false
+          })
+        actionChart.get(series).addPoint([ data.ts, data.stats.runningAvgByType[series]])
+
+      # Activity Chart
+      #   Users & Activities (axis 1)
+      #   Site Count (axis 2)
 
       activityChart = $('#activity-chart').highcharts()
       activityChart.get('site-count').addPoint([ data.ts, data.stats.siteCount], true)
@@ -90,6 +96,34 @@ Flatline.start = () ->
       id: 'job-server-count',
       name: 'Job Servers',
       yAxis: 1
+    }],
+    plotOptions: {
+      series: {
+        marker: {
+          enabled: false
+        }
+      }
+    }
+  })
+
+  $('#action-chart').highcharts({
+    chart: {
+      borderWidth: 3,
+      backgroundColor: '#FCFFC5',
+      type: 'line'
+    },
+    title: {
+      text: 'Response Times By Activity Type'
+    },
+    xAxis: {
+      type: 'datetime'
+    },
+    yAxis: [{
+      min: 0,
+      title: {
+        id: 'activity-axis',
+        text: 'Response Time'
+      }
     }],
     plotOptions: {
       series: {

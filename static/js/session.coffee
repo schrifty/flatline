@@ -22,6 +22,7 @@ class Session
   @appServerCount = 0
   @jobServerCount = 0
   @runningAvg = 0
+  @runningAvgByType = {}
 
   @startEmitter = () ->
     Session.emit(0, 0)
@@ -32,15 +33,7 @@ class Session
       errorCount = @errorCount
       activityRate = (@activityCount - lastActivityCount) / (CALLBACK_SECS * @appServerCount)
       errorRate = (@errorCount - lastErrorCount) / (CALLBACK_SECS * @appServerCount)
-      queueDepth = Object.keys(require('https').globalAgent.requests).length
 
-      socketsInUse = 0
-      for socket in require('https').globalAgent.sockets
-        if socketList.hasOwnProperty(socket)
-          socketsInUse += socketList[socket].length
-
-      if queueDepth > 0
-        logger.warn("Max Sockets: [%d]  Queue Depth: [%d]  Socket Depth: [%d]", require('https').globalAgent.maxSockets, queueDepth, socketDepth)
       Spaces.socket.emit "stats", { ts: new Date().getTime(), stats: {
         siteCount: @totalSites,
         userCount: @totalActiveUsers,
@@ -51,8 +44,8 @@ class Session
         errorRate: errorRate,
         appServerCount: @appServerCount,
         jobServerCount: @jobServerCount,
-        socketsInUse: socketsInUse,
-        runningAvg: @runningAvg
+        runningAvg: @runningAvg,
+        runningAvgByType: @runningAvgByType
       }}
 
     callback = () -> Session.emit(activityCount, errorCount)
@@ -69,7 +62,7 @@ class Session
   @registerSite = (site) ->
 
     site.users = []
-    site.signupPeriod = Runner.USER_SIGNUP_INTERVAL_MS
+    site.signupPeriod = 20000
     site.currentUsers = 0
     site.maxUsers = 50000
     # TODO uncomment the above and randomize these runtime characteristics
@@ -153,7 +146,7 @@ class Session
   @items = {}
 
   @addItem = (site, userId, type, item) ->
-    logger.info("[%s][%s] Session.addItem: Added a %s [%s]", site.site_id, userId, type, item)
+    logger.debug("[%s][%s] Session.addItem: Added a %s [%s]", site.site_id, userId, type, item)
     @itemCount += 1
 
     if @items[userId]
@@ -202,7 +195,10 @@ class Session
   @times = []
   @runningAvgTotal = 0
 
-  @profile = (msecs) ->
+  @timesByType = []
+  @timesByTypeTotal = []
+
+  @profile = (action, msecs) ->
     @times.push(msecs)
     @runningAvgTotal += msecs
     if @times.length > 100
@@ -211,16 +207,28 @@ class Session
       @runningAvgTotal -= n
     @runningAvg = (@runningAvgTotal / (1000 * @times.length))
 
-  @addActivity = (msecs) ->
+    if action.method == 'show'
+      unless @timesByType[action.resource]
+        @timesByType[action.resource] = []
+        @timesByTypeTotal[action.resource] = 0
+
+      @timesByType[action.resource].push(msecs)
+      @timesByTypeTotal[action.resource] += msecs
+      if @timesByType[action.resource].length > 10
+        n = @timesByType[action.resource][0]
+        @timesByType[action.resource] = @timesByType[action.resource].slice(1)
+        @timesByTypeTotal[action.resource] -= n
+      @runningAvgByType[action.resource] = (@timesByTypeTotal[action.resource] / (1000 * @timesByType[action.resource].length))
+
+  @addActivity = (action, msecs) ->
     @activityCount += 1
-    @profile(msecs) if msecs
+    @profile(action, msecs) if msecs
 
   # ERRORS
 
-  @addError = (msecs) ->
+  @addError = (action, msecs) ->
     @errorCount += 1
-    @profile(msecs) if msecs
-
+    @profile(action, msecs) if msecs
 
 module.exports = exports = Session
 

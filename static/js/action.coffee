@@ -42,11 +42,11 @@ class Action
     ))
 
   @launch = (site, userId, action, oncomplete) ->
-    resource = null
+    resourceId = null
 
     switch action.method
       when 'delete', 'update', 'show'
-        unless resource = Session.getRandomUserItemIdOfType(site, userId, action.resource)
+        unless resourceId = Session.getRandomUserItemIdOfType(site, userId, action.resource)
           logger.info "[%s][%s] Resource not found, so aborting, resource[%s] - method[%s]", site.site_id, userId, action.resource, action.method
           return false
       else
@@ -80,15 +80,15 @@ class Action
       ondelete: () ->
         Session.removeItem(site, userId, action.resource, null)
       onsuccess: (msecs) ->
-        Session.addActivity(msecs)
+        Session.addActivity(action, msecs)
         oncomplete() if oncomplete
       onfail: (msecs) ->
-        Session.addError(msecs)
+        Session.addError(action, msecs)
         oncomplete() if oncomplete
     }
 
     sessionId = Session.getUserSessionId(site, userId)
-    Spaces.process(site, userId, action, sessionId, resource, parentId, eventHandlers)
+    Spaces.process(site, userId, action, sessionId, resourceId, parentId, eventHandlers)
 
   @readActions = (oncomplete) ->
     Spaces.logger.debug "Action.readActions: Loading actions file"
