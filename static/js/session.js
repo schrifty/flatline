@@ -37,8 +37,8 @@
       if (Spaces.socket) {
         activityCount = this.activityCount;
         errorCount = this.errorCount;
-        activityRate = (this.activityCount - lastActivityCount) / (CALLBACK_SECS * this.appServerCount);
-        errorRate = (this.errorCount - lastErrorCount) / (CALLBACK_SECS * this.appServerCount);
+        activityRate = (this.activityCount - lastActivityCount) / CALLBACK_SECS;
+        errorRate = (this.errorCount - lastErrorCount) / CALLBACK_SECS;
         Spaces.socket.emit("stats", {
           ts: new Date().getTime(),
           stats: {

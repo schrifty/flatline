@@ -31,8 +31,10 @@ class Session
     if Spaces.socket
       activityCount = @activityCount
       errorCount = @errorCount
-      activityRate = (@activityCount - lastActivityCount) / (CALLBACK_SECS * @appServerCount)
-      errorRate = (@errorCount - lastErrorCount) / (CALLBACK_SECS * @appServerCount)
+#      activityRate = (@activityCount - lastActivityCount) / (CALLBACK_SECS * @appServerCount)
+#      errorRate = (@errorCount - lastErrorCount) / (CALLBACK_SECS * @appServerCount)
+      activityRate = (@activityCount - lastActivityCount) / CALLBACK_SECS
+      errorRate = (@errorCount - lastErrorCount) / CALLBACK_SECS
 
       Spaces.socket.emit "stats", { ts: new Date().getTime(), stats: {
         siteCount: @totalSites,

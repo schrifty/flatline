@@ -14,7 +14,6 @@
         rateChart.get('job-server-count').addPoint([data.ts, data.stats.jobServerCount], true);
         rateChart.get('activity-rate').addPoint([data.ts, data.stats.activityRate], true);
         rateChart.get('error-rate').addPoint([data.ts, data.stats.errorRate], true);
-        rateChart.get('sockets-in-use').addPoint([data.ts, data.stats.socketsInUse], true);
         actionChart = $('#action-chart').highcharts();
         _ref = Object.keys(data.stats.runningAvgByType);
         for (_i = 0, _len = _ref.length; _i < _len; _i++) {
@@ -60,7 +59,7 @@
           min: 0,
           title: {
             id: 'rate-axis',
-            text: 'Transactions/sec/server'
+            text: 'Transactions/sec'
           }
         }, {
           opposite: true,
@@ -75,20 +74,15 @@
         {
           data: [],
           id: 'activity-rate',
-          name: 'Activity per Server'
+          name: 'Activities/sec'
         }, {
           data: [],
           id: 'error-rate',
-          name: 'Errors per Server'
+          name: 'Errors/sec'
         }, {
           data: [],
           id: 'app-server-count',
           name: 'App Servers',
-          yAxis: 1
-        }, {
-          data: [],
-          id: 'sockets-in-use',
-          name: 'Sockets-in-use',
           yAxis: 1
         }, {
           data: [],
