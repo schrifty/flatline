@@ -33,12 +33,11 @@ class Action
       if target < Action.actionIndex[i]
         action = Action.actions[i]
         break
-#    logger.info "[%s][%s] ABOUT TO: %s %s in %s", site.site_id, userId, action.method, action.resource, action.parent
     Action.launch(site, userId, action, (() ->
       if action.parent
-        logger.info "[%s][%s] SUCCESS: %s %s in %s", site.site_id, userId, action.method, action.resource, action.parent
+        logger.debug "[%s][%s] SUCCESS: %s %s in %s", site.site_id, userId, action.method, action.resource, action.parent
       else
-        logger.info "[%s][%s] SUCCESS: %s %s", site.site_id, userId, action.method, action.resource
+        logger.debug "[%s][%s] SUCCESS: %s %s", site.site_id, userId, action.method, action.resource
     ))
 
   @launch = (site, userId, action, oncomplete) ->

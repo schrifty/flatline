@@ -59,9 +59,9 @@
       }
       return Action.launch(site, userId, action, (function() {
         if (action.parent) {
-          return logger.info("[%s][%s] SUCCESS: %s %s in %s", site.site_id, userId, action.method, action.resource, action.parent);
+          return logger.debug("[%s][%s] SUCCESS: %s %s in %s", site.site_id, userId, action.method, action.resource, action.parent);
         } else {
-          return logger.info("[%s][%s] SUCCESS: %s %s", site.site_id, userId, action.method, action.resource);
+          return logger.debug("[%s][%s] SUCCESS: %s %s", site.site_id, userId, action.method, action.resource);
         }
       }));
     };
