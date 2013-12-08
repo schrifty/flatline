@@ -35,7 +35,7 @@ class Runner
     logger.info("********** Max Sockets: [%d]  Queue Depth: [%d]  Socket Depth: [%d]", maxSockets, queueDepth, socketDepth)
 
     callback = -> Runner.diagInfo()
-    setTimeout callback, 1000
+    setTimeout callback, 60000
 
 
   @createNextSite: () ->
@@ -58,7 +58,6 @@ class Runner
       # if we successfully created the site, lets log tech-support in and seed the site with a little structure
       Runner.login(site, 'tech-support@moxiesoft.com', 'k3ithm00n', ((user, cookies) ->
 #        Session.addActivity()
-        logger.info("[%s][%s] Authed User [%s][%s][%s]", site.site_id, user.id, user.id, user.email, cookies['_social_navigator_session'])
 #        site = Session.registerUser(site.site_id, user, cookies['_social_navigator_session'])
 #        Action.seedSite(site, user.id, (() ->
 #          Runner.createUser(site)
@@ -85,7 +84,7 @@ class Runner
     }
     Spaces.User.create(data, site.full_url, ((user) ->
 #      Session.addActivity()
-      logger.info("[%s][%s] Created User [%s][%s]", site.site_id, user.id, user.id, user.email)
+      logger.debug("[%s][%s] Created User [%s][%s]", site.site_id, user.id, user.id, user.email)
       Runner.login(site, email, password, ((user, cookies) ->
 #        Session.addActivity()
         site = Session.registerUser(site.site_id, user, cookies['_social_navigator_session'])
@@ -112,6 +111,7 @@ class Runner
       }
     }
     Spaces.Site.login(data, site, ((resp, cookies) ->
+      logger.debug("[%s][%s] Authed User [%s][%s][%s]", site.site_id, email, cookies['_social_navigator_session'])
       onsuccess(JSON.parse(resp), cookies)
     ), ((msg) ->
       onfail(msg) if onfail

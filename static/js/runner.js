@@ -42,7 +42,7 @@
       callback = function() {
         return Runner.diagInfo();
       };
-      return setTimeout(callback, 1000);
+      return setTimeout(callback, 60000);
     };
 
     Runner.createNextSite = function() {
@@ -62,7 +62,6 @@
         site = Session.registerSite(site);
         return Runner.login(site, 'tech-support@moxiesoft.com', 'k3ithm00n', (function(user, cookies) {
           var callback;
-          logger.info("[%s][%s] Authed User [%s][%s][%s]", site.site_id, user.id, user.id, user.email, cookies['_social_navigator_session']);
           Runner.createUser(site);
           if (Session.siteCount() < MAX_SITES) {
             callback = function() {
@@ -90,7 +89,7 @@
       };
       return Spaces.User.create(data, site.full_url, (function(user) {
         var callback;
-        logger.info("[%s][%s] Created User [%s][%s]", site.site_id, user.id, user.id, user.email);
+        logger.debug("[%s][%s] Created User [%s][%s]", site.site_id, user.id, user.id, user.email);
         Runner.login(site, email, password, (function(user, cookies) {
           site = Session.registerUser(site.site_id, user, cookies['_social_navigator_session']);
           return Action.seedUser(site, user.id, (function() {
@@ -121,6 +120,7 @@
         }
       };
       return Spaces.Site.login(data, site, (function(resp, cookies) {
+        logger.debug("[%s][%s] Authed User [%s][%s][%s]", site.site_id, email, cookies['_social_navigator_session']);
         return onsuccess(JSON.parse(resp), cookies);
       }), (function(msg) {
         if (onfail) {
