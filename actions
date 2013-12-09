@@ -45,10 +45,12 @@
 
 [5] create a folder in a folder
 [25] show a folder
+[1] Update a folder
+[1] Delete a folder
 [1] create a document in a folder # BEWARE - this costs money!
 [100] show a document
-# [1] delete a document
-# [1] update a document
+[1] delete a document
+[1] update a document
 
 [3] create a forum in a group
 [25] show a forum
@@ -62,6 +64,7 @@
 [3] create a group in a category
 [3] create a group in a group
 [25] show a group
+[2] update a group
 
 [3] create an ideastorm in a group
 [25] show an ideastorm
